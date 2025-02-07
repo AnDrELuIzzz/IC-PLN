@@ -27,13 +27,20 @@ def parse_conllu(file_path):
                 current_sent['sent_id'] = line.split('=', 1)[1].strip()
                 # Comentário: Armazena o identificador único da sentença
             
-            elif line.startswith('1\t'):
-                in_sentence = True
-                current_sent['tokens'] = []
-                current_sent['gold_pos'] = []
-                current_sent['gold_heads'] = []
-                current_sent['gold_deprels'] = []
-                # Comentário: Inicia a captura dos tokens e seus atributos a partir do primeiro token
+            # Inicia a captura de tokens assim que encontrar uma linha que comece com dígito (ignorando intervalos)
+            elif line and line[0].isdigit() and '-' not in line.split('\t')[0]:
+                if not in_sentence:
+                    in_sentence = True
+                    current_sent['tokens'] = []
+                    current_sent['gold_pos'] = []
+                    current_sent['gold_heads'] = []
+                    current_sent['gold_deprels'] = []
+                parts = line.split('\t')
+                # Captura os atributos do token
+                current_sent['tokens'].append(parts[1])
+                current_sent['gold_pos'].append(parts[3])
+                current_sent['gold_heads'].append(int(parts[6]))
+                current_sent['gold_deprels'].append(parts[7])
             
             elif line == '':
                 if in_sentence and current_sent.get('tokens'):
@@ -52,14 +59,6 @@ def parse_conllu(file_path):
                     current_sent = {}
                     in_sentence = False
                     # Comentário: Finaliza a sentença e reinicia as variáveis de controle
-            
-            elif in_sentence and line[0].isdigit() and '-' not in line.split('\t')[0]:
-                parts = line.split('\t')
-                # Comentário: Extrai os atributos do token conforme a estrutura CONLL-U
-                current_sent['tokens'].append(parts[1])
-                current_sent['gold_pos'].append(parts[3])
-                current_sent['gold_heads'].append(int(parts[6]))
-                current_sent['gold_deprels'].append(parts[7])
     
     return sentences
 
