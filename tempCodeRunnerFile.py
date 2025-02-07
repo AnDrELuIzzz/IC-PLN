@@ -1,2 +1,1 @@
-# Remova ou comente a linha incorreta que referencia "Token"
-# Token   # <-- linha removida ou comentada
+Extrai spans de tokens e mapeia as dependências levando em conta a indexação do spaCy.
