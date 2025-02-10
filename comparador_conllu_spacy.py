@@ -210,7 +210,7 @@ def save_results_to_file(results, metrics, output_file="resultados_completos.txt
 
 # Execução principal
 if __name__ == "__main__":
-    # ...existing code...
+    
     # 1. Parsear o arquivo CONLL-U para extrair as sentenças e respectivos atributos
     sentences = parse_conllu("/home/andre/Dev-Ubuntu/IC/experimentos/scripts/data/UD_Portuguese-Bosque/pt_bosque-ud-test.conllu")
     
@@ -225,4 +225,4 @@ if __name__ == "__main__":
     
     # 5. Mensagem de confirmação da execução
     print("Processamento concluído! Resultados salvos em 'resultados_completos.txt'")
-    # ...existing code...
+    
