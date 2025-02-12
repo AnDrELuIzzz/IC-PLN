@@ -187,8 +187,85 @@ def save_results_to_file(results, metrics, output_file="resultados_completos.txt
             table = tabulate(comp_rows, headers=comp_headers, tablefmt="grid")
             f.write(table + "\n")
 
+
 # Nova função: Análise de Erros
 def analyze_errors(results, output_file="analise_erros.txt"):
+    """
+    Gera um relatório detalhado dos erros cometidos pelo modelo em POS tagging, lematização e análise de dependências.
+    Inclui informações sobre a sentença, o token específico e sua posição.
+    """
+    error_analysis = {
+        'pos_errors': [],
+        'lemma_errors': [],
+        'dependency_errors': []
+    }
+
+    for sent in results:
+        sent_id = sent.get('sent_id', 'N/A')
+        text = sent['text']
+        for idx, (g_pos, p_pos, g_lemma, p_lemma, g_head, p_head, g_deprel, p_deprel) in enumerate(zip(
+            sent['gold_pos'], sent['pred_pos'],
+            sent['gold_lemmas'], sent['pred_lemmas'],
+            sent['gold_heads'], sent['pred_heads'],
+            sent['gold_deprels'], sent['pred_deprels']
+        )):
+            token = sent['gold_tokens'][idx]
+            if g_pos != p_pos:
+                error_analysis['pos_errors'].append({
+                    'sent_id': sent_id,
+                    'text': text,
+                    'token': token,
+                    'position': idx + 1,
+                    'gold': g_pos,
+                    'predicted': p_pos
+                })
+            if g_lemma != p_lemma:
+                error_analysis['lemma_errors'].append({
+                    'sent_id': sent_id,
+                    'text': text,
+                    'token': token,
+                    'position': idx + 1,
+                    'gold': g_lemma,
+                    'predicted': p_lemma
+                })
+            if g_head != p_head or g_deprel != p_deprel:
+                error_analysis['dependency_errors'].append({
+                    'sent_id': sent_id,
+                    'text': text,
+                    'token': token,
+                    'position': idx + 1,
+                    'gold': (g_head, g_deprel),
+                    'predicted': (p_head, p_deprel)
+                })
+
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write("=== Análise de Erros ===\n\n")
+
+        # Relatório de Erros de POS Tagging
+        f.write(f"Erros de POS Tagging ({len(error_analysis['pos_errors'])}):\n")
+        for error in error_analysis['pos_errors']:
+            f.write(f"Sentença ID: {error['sent_id']}\n")
+            f.write(f"Texto: {error['text']}\n")
+            f.write(f"Token: {error['token']} (Posição: {error['position']})\n")
+            f.write(f"Gold: {error['gold']} | Predito: {error['predicted']}\n\n")
+
+        # Relatório de Erros de Lematização
+        f.write("\nErros de Lematização ({len(error_analysis['lemma_errors'])}):\n")
+        for error in error_analysis['lemma_errors']:
+            f.write(f"Sentença ID: {error['sent_id']}\n")
+            f.write(f"Texto: {error['text']}\n")
+            f.write(f"Token: {error['token']} (Posição: {error['position']})\n")
+            f.write(f"Gold: {error['gold']} | Predito: {error['predicted']}\n\n")
+
+        # Relatório de Erros de Dependências
+        f.write("\nErros de Dependências ({len(error_analysis['dependency_errors'])}):\n")
+        for error in error_analysis['dependency_errors']:
+            f.write(f"Sentença ID: {error['sent_id']}\n")
+            f.write(f"Texto: {error['text']}\n")
+            f.write(f"Token: {error['token']} (Posição: {error['position']})\n")
+            f.write(f"Gold: {error['gold']} | Predito: {error['predicted']}\n\n")
+
+    print(f"Relatório de erros gerado: '{output_file}'")
     """
     Gera um relatório detalhado dos erros cometidos pelo modelo em POS tagging, lematização e análise de dependências.
     """
@@ -244,17 +321,21 @@ def visualize_dependencies(sentences, nlp_model, output_dir="visualizations"):
 
 # Execução principal
 if __name__ == "__main__":
+    # Criar diretório para arquivos txt se não existir
+    txt_dir = "analise_spacy"
+    os.makedirs(txt_dir, exist_ok=True)
+
     # 1. Parsear o arquivo CONLL-U para extrair as sentenças e respectivos atributos
     sentences = parse_conllu("/home/andre/Dev-Ubuntu/IC/experimentos/scripts/data/UD_Portuguese-Bosque/pt_bosque-ud-test.conllu")
     # 2. Processar cada sentença com o modelo spaCy para obter dados preditos
     results = evaluate_spacy(sentences, "pt_core_news_lg")
     # 3. Calcular as métricas comparativas entre os dados gold e os preditos
     metrics = calculate_metrics(results)
-    # 4. Salvar os resultados detalhados e as métricas em um arquivo de saída
-    save_results_to_file(results, metrics, max_sentences=len(results))
-    # 5. Gerar análise de erros
-    analyze_errors(results, output_file="analise_erros.txt")
+    # 4. Salvar os resultados detalhados e as métricas em um arquivo de saída dentro de analise_spacy
+    save_results_to_file(results, metrics, output_file=f"{txt_dir}/resultados_completos.txt", max_sentences=len(results))
+    # 5. Gerar análise de erros salvando em analise_spacy
+    analyze_errors(results, output_file=f"{txt_dir}/analise_erros.txt")
     # 6. Gerar visualizações de dependências
     visualize_dependencies(sentences, "pt_core_news_lg", output_dir="visualizations")
     # 7. Mensagem de confirmação da execução
-    print("Processamento concluído! Resultados salvos em 'resultados_completos.txt'")
+    print("Processamento concluído! Resultados salvos em 'analise_spacy/resultados_completos.txt'")

@@ -1,0 +1,9 @@
+# Dependências principais
+spacy>=3.0.0
+tabulate>=0.8.9
+
+# Modelo spaCy em português
+spacy-model-pt-core-news-lg>=3.0.0
+
+# Outras dependências opcionais
+nltk>=3.6.0  

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="pt" id="8fa879ba12b843fdb938102d7266fbf4-0" class="displacy" width="750" height="312.0" direction="ltr" style="max-width: none; height: 312.0px; color: #000000; background: #ffffff; font-family: Arial; direction: ltr">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="pt" id="f023d3b2258d40ac9ed62adc477d29b7-0" class="displacy" width="750" height="312.0" direction="ltr" style="max-width: none; height: 312.0px; color: #000000; background: #ffffff; font-family: Arial; direction: ltr">
 <text class="displacy-token" fill="currentColor" text-anchor="middle" y="222.0">
     <tspan class="displacy-word" fill="currentColor" x="50">Manifestação</tspan>
     <tspan class="displacy-tag" dy="2em" fill="currentColor" x="50">NOUN</tspan>
@@ -20,25 +20,25 @@
 </text>
 
 <g class="displacy-arrow">
-    <path class="displacy-arc" id="arrow-8fa879ba12b843fdb938102d7266fbf4-0-0" stroke-width="2px" d="M70,177.0 C70,89.5 220.0,89.5 220.0,177.0" fill="none" stroke="currentColor"/>
+    <path class="displacy-arc" id="arrow-f023d3b2258d40ac9ed62adc477d29b7-0-0" stroke-width="2px" d="M70,177.0 C70,89.5 220.0,89.5 220.0,177.0" fill="none" stroke="currentColor"/>
     <text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-        <textPath xlink:href="#arrow-8fa879ba12b843fdb938102d7266fbf4-0-0" class="displacy-label" startOffset="50%" side="left" fill="currentColor" text-anchor="middle">amod</textPath>
+        <textPath xlink:href="#arrow-f023d3b2258d40ac9ed62adc477d29b7-0-0" class="displacy-label" startOffset="50%" side="left" fill="currentColor" text-anchor="middle">amod</textPath>
     </text>
     <path class="displacy-arrowhead" d="M220.0,179.0 L228.0,167.0 212.0,167.0" fill="currentColor"/>
 </g>
 
 <g class="displacy-arrow">
-    <path class="displacy-arc" id="arrow-8fa879ba12b843fdb938102d7266fbf4-0-1" stroke-width="2px" d="M420,177.0 C420,89.5 570.0,89.5 570.0,177.0" fill="none" stroke="currentColor"/>
+    <path class="displacy-arc" id="arrow-f023d3b2258d40ac9ed62adc477d29b7-0-1" stroke-width="2px" d="M420,177.0 C420,89.5 570.0,89.5 570.0,177.0" fill="none" stroke="currentColor"/>
     <text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-        <textPath xlink:href="#arrow-8fa879ba12b843fdb938102d7266fbf4-0-1" class="displacy-label" startOffset="50%" side="left" fill="currentColor" text-anchor="middle">case</textPath>
+        <textPath xlink:href="#arrow-f023d3b2258d40ac9ed62adc477d29b7-0-1" class="displacy-label" startOffset="50%" side="left" fill="currentColor" text-anchor="middle">case</textPath>
     </text>
     <path class="displacy-arrowhead" d="M420,179.0 L412,167.0 428,167.0" fill="currentColor"/>
 </g>
 
 <g class="displacy-arrow">
-    <path class="displacy-arc" id="arrow-8fa879ba12b843fdb938102d7266fbf4-0-2" stroke-width="2px" d="M70,177.0 C70,2.0 575.0,2.0 575.0,177.0" fill="none" stroke="currentColor"/>
+    <path class="displacy-arc" id="arrow-f023d3b2258d40ac9ed62adc477d29b7-0-2" stroke-width="2px" d="M70,177.0 C70,2.0 575.0,2.0 575.0,177.0" fill="none" stroke="currentColor"/>
     <text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-        <textPath xlink:href="#arrow-8fa879ba12b843fdb938102d7266fbf4-0-2" class="displacy-label" startOffset="50%" side="left" fill="currentColor" text-anchor="middle">nmod</textPath>
+        <textPath xlink:href="#arrow-f023d3b2258d40ac9ed62adc477d29b7-0-2" class="displacy-label" startOffset="50%" side="left" fill="currentColor" text-anchor="middle">nmod</textPath>
     </text>
     <path class="displacy-arrowhead" d="M575.0,179.0 L583.0,167.0 567.0,167.0" fill="currentColor"/>
 </g>
