@@ -1,5 +1,6 @@
 import spacy  # Importa o spaCy para processamento de linguagem natural
 from spacy.tokens import Doc  # Usado para criar um objeto Doc com tokens gold
+from tabulate import tabulate  # Importa tabulate para formatação de tabelas
 
 # Função para parsear um arquivo CONLL-U e extrair anotações linguísticas
 def parse_conllu(file_path):
@@ -154,39 +155,47 @@ def calculate_metrics(results):
 # Função que salva os resultados e métricas em um arquivo de saída
 def save_results_to_file(results, metrics, output_file="resultados_completos.txt", max_sentences=None):
     """
-    Registra as métricas gerais e detalhes de cada sentença para análise posterior.
-    Detalhes técnicos:
-    - Abre o arquivo em modo escrita com encoding UTF-8 para garantir compatibilidade.
-    - Escreve as métricas de forma formatada utilizando porcentagens para melhor visualização.
-    - Permite limitar o número de sentenças detalhadas através do parâmetro max_sentences.
+    Registra as métricas gerais e detalhes de cada sentença para análise posterior,
+    utilizando formatação aprimorada com a biblioteca tabulate, que melhora a visualização
+    dos dados para um artigo científico.
     """
+    # Construção de uma tabela para as métricas gerais
+    metric_rows = [
+        ["Acurácia de POS", f"{metrics['pos_accuracy']:.2%}"],
+        ["Acurácia de Lemmas", f"{metrics['lemma_accuracy']:.2%}"],
+        ["UAS", f"{metrics['uas']:.2%}"],
+        ["LAS", f"{metrics['las']:.2%}"],
+        ["Precisão em Tokenização", f"{metrics['token_precision']:.2%}"],
+        ["Recall em Tokenização", f"{metrics['token_recall']:.2%}"],
+        ["F1-Score em Tokenização", f"{metrics['token_f1']:.2%}"]
+    ]
+    metrics_table = tabulate(metric_rows, headers=["Métrica", "Valor"], tablefmt="grid")
+    
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("=== Métricas Gerais ===\n")
-        f.write(f"Acurácia de POS: {metrics['pos_accuracy']:.2%}\n")
-        f.write(f"Precisão em Tokenização: {metrics['token_precision']:.2%}\n")
-        f.write(f"Recall em Tokenização: {metrics['token_recall']:.2%}\n")
-        f.write(f"F1-Score em Tokenização: {metrics['token_f1']:.2%}\n\n")
+        f.write(metrics_table + "\n\n")
         
         if max_sentences is None:
             max_sentences = len(results)
             
         for i, sent in enumerate(results[:max_sentences]):
             f.write(f"\n=== Sentença {i+1} ({sent['sent_id']}) ===\n")
-            f.write(f"Texto: {sent['text']}\n")
+            f.write("Texto: " + sent['text'] + "\n\n")
             
-            # Exibe comparação entre tokens gold e spaCy:
-            f.write("\nTokens Gold vs. spaCy:\n")
-            f.write("Gold Tokens: " + " | ".join(sent['gold_tokens']) + "\n")
-            f.write("spaCy Tokens: " + " | ".join(sent['pred_tokens']) + "\n")
+            # Exibição dos tokens gold vs. spaCy
+            f.write("Tokens Gold vs. spaCy:\n")
+            tokens_data = [
+                ["Gold Tokens", "spaCy Tokens"],
+                [" | ".join(sent['gold_tokens']), " | ".join(sent['pred_tokens'])]
+            ]
+            f.write(tabulate(tokens_data, tablefmt="plain") + "\n\n")
             
-            # Tabela comparativa de POS, dependências e lemas com formatação melhorada
-            header = "{:<12} | {:<9} | {:<9} | {:<9} | {:<10} | {:<13} | {:<13} | {:<9} | {}\n".format(
-                "Token", "Gold POS", "spaCy POS", "Gold HEAD", "spaCy HEAD", "Gold DEPREL", "spaCy DEPREL", "Gold Lemma", "spaCy Lemma"
-            )
-            f.write("\n" + header)
-            f.write("-" * (len(header)-1) + "\n")
+            # Tabela comparativa: POS, HEADs, DEPREL e Lemmas
+            comp_headers = ["Token", "Gold POS", "spaCy POS", "Gold HEAD", "spaCy HEAD",
+                            "Gold DEPREL", "spaCy DEPREL", "Gold Lemma", "spaCy Lemma"]
+            comp_rows = []
             for j in range(len(sent['gold_tokens'])):
-                line = "{:<12} | {:<9} | {:<9} | {:<9} | {:<10} | {:<13} | {:<13} | {:<9} | {}".format(
+                comp_rows.append([
                     sent['gold_tokens'][j],
                     sent['gold_pos'][j],
                     sent['pred_pos'][j],
@@ -196,9 +205,9 @@ def save_results_to_file(results, metrics, output_file="resultados_completos.txt
                     sent['pred_deprels'][j],
                     sent['gold_lemmas'][j],
                     sent['pred_lemmas'][j]
-                )
-                f.write(line + "\n")
-            # Comentário: Cada linha detalha as atribuições e permite identificar divergências na análise
+                ])
+            table = tabulate(comp_rows, headers=comp_headers, tablefmt="grid")
+            f.write(table + "\n")
 
 # Execução principal
 if __name__ == "__main__":
