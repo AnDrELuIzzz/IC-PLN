@@ -1,6 +1,8 @@
 import spacy  # Importa o spaCy para processamento de linguagem natural
+from spacy import displacy  # Para visualização de dependências
 from spacy.tokens import Doc  # Usado para criar um objeto Doc com tokens gold
 from tabulate import tabulate  # Importa tabulate para formatação de tabelas
+import os  # Para manipulação de diretórios
 
 # Função para parsear um arquivo CONLL-U e extrair anotações linguísticas
 def parse_conllu(file_path):
@@ -20,11 +22,8 @@ def parse_conllu(file_path):
             line = line.strip()
             if line.startswith('# text ='):
                 current_sent['text'] = line.split('=', 1)[1].strip()
-                # Comentário: Armazena o texto original da sentença
             elif line.startswith('# sent_id ='):
                 current_sent['sent_id'] = line.split('=', 1)[1].strip()
-                # Comentário: Armazena o identificador único da sentença
-            # Inicia a captura de tokens assim que encontrar uma linha que comece com dígito (ignorando intervalos)
             elif line and line[0].isdigit() and '-' not in line.split('\t')[0]:
                 if not in_sentence:
                     in_sentence = True
@@ -34,7 +33,6 @@ def parse_conllu(file_path):
                     current_sent['gold_deprels'] = []
                     current_sent['gold_lemmas'] = []  # Nova chave para armazenar lemas
                 parts = line.split('\t')
-                # Captura os atributos do token
                 current_sent['tokens'].append(parts[1])
                 current_sent['gold_pos'].append(parts[3])
                 current_sent['gold_heads'].append(int(parts[6]))
@@ -42,7 +40,6 @@ def parse_conllu(file_path):
                 current_sent['gold_lemmas'].append(parts[2])  # Captura o lema
             elif line == '':
                 if in_sentence and current_sent.get('tokens'):
-                    # Calcula os spans (posições iniciais e finais dos tokens) no texto original
                     text = current_sent['text']
                     current_pos = 0
                     spans = []
@@ -51,12 +48,10 @@ def parse_conllu(file_path):
                         end = start + len(token)
                         spans.append((start, end))
                         current_pos = end
-                    # Comentário: Localiza a posição do token garantindo que tokens repetidos sejam processados corretamente
                     current_sent['gold_spans'] = spans
                     sentences.append(current_sent)
                     current_sent = {}
                     in_sentence = False
-                    # Comentário: Finaliza a sentença e reinicia as variáveis de controle
     return sentences
 
 # Função para avaliar e comparar o processamento do spaCy com os dados gold
@@ -72,15 +67,11 @@ def evaluate_spacy(sentences, nlp_model):
     nlp = spacy.load(nlp_model)
     results = []
     for sent in sentences:
-        # Processa o texto original com o modelo spaCy para tokenização
         text = sent['text']
         doc_raw = nlp(text)
         pred_spans = [(token.idx, token.idx + len(token)) for token in doc_raw]
-        # Comentário: Gera spans a partir dos índices dos tokens retornados pelo spaCy
-        # Processa tokens gold criando um objeto Doc para alinhamento dos atributos linguísticos
         doc_gold = Doc(nlp.vocab, words=sent['tokens'])
         doc_gold = nlp(doc_gold)
-        # Comentário: O processamento do doc_gold assegura que os atributos (POS, deprel) sejam compatíveis com o pipeline spaCy
         results.append({
             'sent_id': sent.get('sent_id', ''),
             'text': text,
@@ -97,7 +88,6 @@ def evaluate_spacy(sentences, nlp_model):
             'pred_deprels': [token.dep_ for token in doc_gold],
             'pred_lemmas': [token.lemma_ for token in doc_gold]  # Adiciona lemas preditos
         })
-        # Comentário: A estrutura dictionary mapeia os atributos gold e preditos para posterior comparação
     return results
 
 # Função que calcula métricas de avaliação comparando dados de tokens, POS e dependências
@@ -120,7 +110,6 @@ def calculate_metrics(results):
         total_tokens += n
         pos_correct += sum(1 for g, p in zip(sent['gold_pos'], sent['pred_pos']) if g == p)
         lemma_correct += sum(1 for g, p in zip(sent['gold_lemmas'], sent['pred_lemmas']) if g == p)  # Compara lemas
-        # Comentário: Compara POS tag a tag entre o gold e o predito
         for g_head, p_head, g_deprel, p_deprel in zip(
             sent['gold_heads'], sent['pred_heads'], sent['gold_deprels'], sent['pred_deprels']
         ):
@@ -128,8 +117,6 @@ def calculate_metrics(results):
                 uas_correct += 1
                 if g_deprel == p_deprel:
                     las_correct += 1
-        # Comentário: UAS e LAS são avaliados hierarquicamente, verificando dependências e relações
-        # Avaliação de tokenização utilizando spans
         gold_spans = set(sent['gold_spans'])
         pred_spans = set(sent['pred_spans'])
         tp = len(gold_spans & pred_spans)
@@ -138,7 +125,6 @@ def calculate_metrics(results):
         tp_token += tp
         fp_token += fp
         fn_token += fn
-    # Cálculo das métricas de precisão, recall e F1 para tokenização
     precision = tp_token / (tp_token + fp_token) if (tp_token + fp_token) > 0 else 0
     recall = tp_token / (tp_token + fn_token) if (tp_token + fn_token) > 0 else 0
     f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
@@ -159,7 +145,6 @@ def save_results_to_file(results, metrics, output_file="resultados_completos.txt
     utilizando formatação aprimorada com a biblioteca tabulate, que melhora a visualização
     dos dados para um artigo científico.
     """
-    # Construção de uma tabela para as métricas gerais
     metric_rows = [
         ["Acurácia de POS", f"{metrics['pos_accuracy']:.2%}"],
         ["Acurácia de Lemmas", f"{metrics['lemma_accuracy']:.2%}"],
@@ -170,27 +155,20 @@ def save_results_to_file(results, metrics, output_file="resultados_completos.txt
         ["F1-Score em Tokenização", f"{metrics['token_f1']:.2%}"]
     ]
     metrics_table = tabulate(metric_rows, headers=["Métrica", "Valor"], tablefmt="grid")
-    
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("=== Métricas Gerais ===\n")
         f.write(metrics_table + "\n\n")
-        
         if max_sentences is None:
             max_sentences = len(results)
-            
         for i, sent in enumerate(results[:max_sentences]):
             f.write(f"\n=== Sentença {i+1} ({sent['sent_id']}) ===\n")
             f.write("Texto: " + sent['text'] + "\n\n")
-            
-            # Exibição dos tokens gold vs. spaCy
             f.write("Tokens Gold vs. spaCy:\n")
             tokens_data = [
                 ["Gold Tokens", "spaCy Tokens"],
                 [" | ".join(sent['gold_tokens']), " | ".join(sent['pred_tokens'])]
             ]
             f.write(tabulate(tokens_data, tablefmt="plain") + "\n\n")
-            
-            # Tabela comparativa: POS, HEADs, DEPREL e Lemmas
             comp_headers = ["Token", "Gold POS", "spaCy POS", "Gold HEAD", "spaCy HEAD",
                             "Gold DEPREL", "spaCy DEPREL", "Gold Lemma", "spaCy Lemma"]
             comp_rows = []
@@ -209,6 +187,61 @@ def save_results_to_file(results, metrics, output_file="resultados_completos.txt
             table = tabulate(comp_rows, headers=comp_headers, tablefmt="grid")
             f.write(table + "\n")
 
+# Nova função: Análise de Erros
+def analyze_errors(results, output_file="analise_erros.txt"):
+    """
+    Gera um relatório detalhado dos erros cometidos pelo modelo em POS tagging, lematização e análise de dependências.
+    """
+    error_analysis = {
+        'pos_errors': [],
+        'lemma_errors': [],
+        'dependency_errors': []
+    }
+    for sent in results:
+        for g_pos, p_pos, g_lemma, p_lemma, g_head, p_head, g_deprel, p_deprel in zip(
+            sent['gold_pos'], sent['pred_pos'],
+            sent['gold_lemmas'], sent['pred_lemmas'],
+            sent['gold_heads'], sent['pred_heads'],
+            sent['gold_deprels'], sent['pred_deprels']
+        ):
+            if g_pos != p_pos:
+                error_analysis['pos_errors'].append((g_pos, p_pos))
+            if g_lemma != p_lemma:
+                error_analysis['lemma_errors'].append((g_lemma, p_lemma))
+            if g_head != p_head or g_deprel != p_deprel:
+                error_analysis['dependency_errors'].append(((g_head, g_deprel), (p_head, p_deprel)))
+
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write("=== Análise de Erros ===\n\n")
+        f.write(f"Erros de POS Tagging ({len(error_analysis['pos_errors'])}):\n")
+        for error in error_analysis['pos_errors']:
+            f.write(f"Gold: {error[0]} | Predito: {error[1]}\n")
+        
+        f.write("\nErros de Lematização ({len(error_analysis['lemma_errors'])}):\n")
+        for error in error_analysis['lemma_errors']:
+            f.write(f"Gold: {error[0]} | Predito: {error[1]}\n")
+        
+        f.write("\nErros de Dependências ({len(error_analysis['dependency_errors'])}):\n")
+        for error in error_analysis['dependency_errors']:
+            f.write(f"Gold: {error[0]} | Predito: {error[1]}\n")
+
+    print(f"Relatório de erros gerado: '{output_file}'")
+
+# Nova função: Visualização de Dependências
+def visualize_dependencies(sentences, nlp_model, output_dir="visualizations"):
+    """
+    Gera visualizações gráficas das árvores de dependência para cada sentença.
+    """
+    nlp = spacy.load(nlp_model)
+    os.makedirs(output_dir, exist_ok=True)  # Cria o diretório se ele não existir
+    for i, sent in enumerate(sentences):
+        text = sent['text']
+        doc = nlp(text)
+        svg = displacy.render(doc, style="dep", jupyter=False)
+        with open(f"{output_dir}/sentence_{i+1}.svg", "w", encoding="utf-8") as f:
+            f.write(svg)
+    print(f"Visualizações de dependências salvas em '{output_dir}'")
+
 # Execução principal
 if __name__ == "__main__":
     # 1. Parsear o arquivo CONLL-U para extrair as sentenças e respectivos atributos
@@ -219,5 +252,9 @@ if __name__ == "__main__":
     metrics = calculate_metrics(results)
     # 4. Salvar os resultados detalhados e as métricas em um arquivo de saída
     save_results_to_file(results, metrics, max_sentences=len(results))
-    # 5. Mensagem de confirmação da execução
+    # 5. Gerar análise de erros
+    analyze_errors(results, output_file="analise_erros.txt")
+    # 6. Gerar visualizações de dependências
+    visualize_dependencies(sentences, "pt_core_news_lg", output_dir="visualizations")
+    # 7. Mensagem de confirmação da execução
     print("Processamento concluído! Resultados salvos em 'resultados_completos.txt'")
