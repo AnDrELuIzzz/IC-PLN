@@ -269,7 +269,7 @@ if __name__ == "__main__":
     conllu_file = "/home/andre/Dev-Ubuntu/IC/experimentos/scripts/data/UD_Portuguese-Bosque/pt_bosque-ud-test.conllu"
     sentences = parse_conllu(conllu_file)
     # 2. Processa cada sentença utilizando Hugging Face com o modelo especificado
-    results = evaluate_huggingface(sentences, model_id="ricardoz/BERTugues-base-portuguese-cased")
+    results = evaluate_huggingface(sentences, model_id="lisaterumi/postagger-portuguese")
     # 3. Calcula métricas comparativas
     metrics = calculate_metrics(results)
     # 4. Salva resultados detalhados e métricas
