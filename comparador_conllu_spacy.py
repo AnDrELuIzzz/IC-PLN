@@ -331,7 +331,8 @@ if __name__ == "__main__":
     results = evaluate_spacy(sentences, "pt_core_news_lg")
     # 3. Calcular as métricas comparativas entre os dados gold e os preditos
     metrics = calculate_metrics(results)
-    # 4. Salvar os resultados detalhados e as métricas em um arquivo de saída dentro de analise_spacy
+
+# 4. Salvar os resultados detalhados e as métricas em um arquivo de saída dentro de analise_spacy
     save_results_to_file(results, metrics, output_file=f"{txt_dir}/resultados_completos.txt", max_sentences=len(results))
     # 5. Gerar análise de erros salvando em analise_spacy
     analyze_errors(results, output_file=f"{txt_dir}/analise_erros.txt")
