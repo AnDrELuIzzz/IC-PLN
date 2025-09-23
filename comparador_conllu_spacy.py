@@ -326,7 +326,7 @@ if __name__ == "__main__":
     os.makedirs(txt_dir, exist_ok=True)
 
     # 1. Parsear o arquivo CONLL-U para extrair as sentenças e respectivos atributos
-    sentences = parse_conllu("/home/anrdre/IC-NLP/UD_Portuguese-Bosque-master/pt_bosque-ud-test.conllu")
+    sentences = parse_conllu("/home/andre/Dev-Ubuntu/IC/experimentos/scripts/Corupus/UD_Portuguese-Bosque-master/pt_bosque-ud-test.conllu")
     # 2. Processar cada sentença com o modelo spaCy para obter dados preditos
     results = evaluate_spacy(sentences, "pt_core_news_lg")
     # 3. Calcular as métricas comparativas entre os dados gold e os preditos

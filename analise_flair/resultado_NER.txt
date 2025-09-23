@@ -1,0 +1,360 @@
+=== Métricas NER (Flair) ===
++----------------+---------+
+| Métrica        | Valor   |
++================+=========+
+| Precisão (NER) | 63.04%  |
++----------------+---------+
+| Recall (NER)   | 64.93%  |
++----------------+---------+
+| F1 (NER)       | 63.97%  |
++----------------+---------+
+
+=== Sentença 1 ===
+Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Bíblia (MISC)', 'Terra (LOC)', 'Cosmologia Bíblica (MISC)']
+Pred: ['Bíblia (ORG)', 'Terra (ORG)', 'Cosmologia Bíblica (MISC)']
+
+=== Sentença 2 ===
+Texto: Omar Khayyam foi um grande cientista , filósofo e poeta persa que viveu de 1048 a 1131 .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Omar Khayyam (PER)']
+Pred: ['Omar Khayyam (PER)']
+
+=== Sentença 3 ===
+Texto: No entanto , Kepler não compreendeu os princípios por detrás das leis que descobriu .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Kepler (PER)']
+Pred: ['Kepler (PER)']
+
+=== Sentença 4 ===
+Texto: Algumas partes do espectro podem ser observadas da superfície da Terra , enquanto outras partes só são observáveis de grandes altitudes ou no espaço .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Terra (LOC)']
+Pred: ['Terra (ORG)']
+
+=== Sentença 5 ===
+Texto: Apesar de algumas ondas de rádio serem produzidas por objetos astronômicos na forma de radiação térmica , a maior parte das emissões de rádio que são observadas da Terra são vistas na forma de radiação síncrotron , que é produzida quando elétrons ou outras partículas eletricamente carregadas descrevem uma trajetória curva em um campo magnético .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Terra (LOC)']
+Pred: ['Terra (ORG)']
+
+=== Sentença 6 ===
+Texto: Além da radiação eletromagnética outras coisas podem ser observadas da Terra que se originam de grandes distâncias .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Terra (LOC)']
+Pred: ['Terra (ORG)']
+
+=== Sentença 7 ===
+Texto: A medição da velocidade radia e o movimento próprio mostra a cinemática desses sistemas através da Via Láctea .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Via Láctea (LOC)']
+Pred: ['Via Láctea (ORG)']
+
+=== Sentença 8 ===
+Texto: Astrobiologia é o estudo do advento e evolução os sistemas biológicos no universo , com ênfase particular na possibilidade de vida fora do planeta Terra .
+
+Gold Entities vs. Pred Entities:
+Gold: ['planeta Terra (LOC)']
+Pred: ['Terra (ORG)']
+
+=== Sentença 9 ===
+Texto: Os demais países americanos restantes tiveram colonização majoritariamente anglo-saxônica , com exceção de Québec , que é de colonização francesa ( portanto , latina ) e dos estados do sudoeste dos Estados Unidos , de colonização espanhola , além da Luisiana , que tem colonização francesa .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Québec (LOC)', 'Estados Unidos (LOC)', 'Luisiana (LOC)']
+Pred: ['Québec (LOC)', 'Estados Unidos (ORG)', 'Luisiana (LOC)']
+
+=== Sentença 10 ===
+Texto: Ao final da Segunda Guerra Mundial , a criação da CEPAL consolidou o uso da expressão como sinônimo dos países menos desenvolvidos dos continentes americanos , e tem , em consequência , um significado mais próximo da economia e dos assuntos sociais .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Segunda Guerra Mundial (MISC)', 'CEPAL (ORG)']
+Pred: ['Segunda Guerra Mundial (MISC)', 'CEPAL (ORG)']
+
+=== Sentença 11 ===
+Texto: A partir do Trópico de Capricórnio , na América do Sul , os tipos climáticos dominantes modificam-se progressivamente com o aumento da latitude , passando a predominar os climas temperados e frios .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Trópico de Capricórnio (LOC)', 'América do Sul (LOC)']
+Pred: ['Trópico de Capricórnio (ORG)', 'América do Sul (LOC)']
+
+=== Sentença 12 ===
+Texto: Essas faixas vão desaparecendo à medida que diminui a distância em relação ao Pólo Sul , onde mesmo ao nível do mar já se encontram áreas permanentemente geladas .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Pólo Sul (LOC)']
+Pred: ['Pólo Sul (LOC)']
+
+=== Sentença 13 ===
+Texto: Durante o verão , no hemisfério austral , as temperaturas mais elevadas ocorrem na parte central da América do Sul , atraindo ventos do oceano Atlântico .
+
+Gold Entities vs. Pred Entities:
+Gold: ['América do Sul (LOC)', 'oceano Atlântico (LOC)']
+Pred: ['América do Sul (LOC)', 'Atlântico (LOC)']
+
+=== Sentença 14 ===
+Texto: As primeiras são comuns na parte equatorial da América do Sul ou em áreas litorâneas .
+
+Gold Entities vs. Pred Entities:
+Gold: ['América do Sul (LOC)']
+Pred: ['América do Sul (LOC)']
+
+=== Sentença 15 ===
+Texto: Na América do Sul , em sua porção norte , merecem destaque os rios Madalena , na Colômbia , e Orinoco ( na Venezuela ) que deságuam no mar das Antilhas e banham importante área agropastoril da fachada norte do continente , além de outros rios importantes que ganham projeção nas suas partes central e meridional , como o colossal Amazonas e os rios Paraná , Paraguai e Uruguai , que formam a bacia Platina , todos desaguando no oceano Atlântico .
+
+Gold Entities vs. Pred Entities:
+Gold: ['América do Sul (LOC)', 'Madalena (LOC)', 'Colômbia (LOC)', 'Orinoco (LOC)', 'Venezuela (LOC)', 'mar das Antilhas (LOC)', 'Amazonas (LOC)', 'Paraná (LOC)', 'Paraguai (LOC)', 'Uruguai (LOC)', 'bacia Platina (LOC)', 'oceano Atlântico (LOC)']
+Pred: ['América do Sul (LOC)', 'Madalena (LOC)', 'Colômbia (LOC)', 'Orinoco (LOC)', 'Venezuela (LOC)', 'Antilhas (LOC)', 'Amazonas (LOC)', 'Paraná (LOC)', 'Paraguai (LOC)', 'Uruguai (LOC)', 'Platina (LOC)', 'Atlântico (LOC)']
+
+=== Sentença 16 ===
+Texto: São os primeiros grupos europeus que passam a povoar e colonizar a chamada América .
+
+Gold Entities vs. Pred Entities:
+Gold: ['América (LOC)']
+Pred: ['São (PER)', 'América (LOC)']
+
+=== Sentença 17 ===
+Texto: Esse sequestro de negros , se fez via migração forçada para colônias -- principalmente o Brasil e o Caribe .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Brasil (LOC)', 'Caribe (LOC)']
+Pred: ['Brasil (LOC)', 'Caribe (LOC)']
+
+=== Sentença 18 ===
+Texto: Em todos os países é possível encontrar a presença dos povos que habitavam o continente americano antes da vinda dos europeus , embora grande parte dos mesmos tenha sido dizimada : no México , por exemplo , ainda é grande a herança e a influência da civilização Asteca .
+
+Gold Entities vs. Pred Entities:
+Gold: ['México (LOC)', 'Asteca (MISC)']
+Pred: ['México (ORG)', 'Asteca (PER)']
+
+=== Sentença 19 ===
+Texto: Os peruanos também têm forte influência da civilização Inca , antiga habitante do oeste da América do Sul .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Inca (LOC)', 'América do Sul (LOC)']
+Pred: ['Inca (MISC)', 'América do Sul (LOC)']
+
+=== Sentença 20 ===
+Texto: Os países do Caribe , ademais do Brasil , Venezuela e Colômbia apresentam forte influência africana .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Caribe (LOC)', 'Brasil (LOC)', 'Venezuela (LOC)', 'Colômbia (LOC)']
+Pred: ['Caribe (ORG)', 'Brasil (ORG)', 'Venezuela (ORG)', 'Colômbia (ORG)']
+
+=== Sentença 21 ===
+Texto: O Haiti é um país cuja esmagadora maioria da população é negra ( apesar da colonização francesa e do idioma pátrio do Haiti ser o francês ) .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Haiti (LOC)', 'Haiti (LOC)']
+Pred: ['Haiti (LOC)', 'Haiti (LOC)']
+
+=== Sentença 22 ===
+Texto: O Brasil também tem grandes concentrações de descendentes de negros africanos e abriga a maior população negra fora da África ( considerando-se todos aqueles que , formalmente , tem ancestrais africanos ) .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Brasil (LOC)', 'África (LOC)']
+Pred: ['Brasil (ORG)', 'África (LOC)']
+
+=== Sentença 23 ===
+Texto: O Espanhol é o idioma predominante da vasta maioria dos países latino-americanos .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Espanhol (MISC)']
+Pred: ['Espanhol (PER)']
+
+=== Sentença 24 ===
+Texto: Em outras , existe uma grande quantidade de falantes das línguas indígenas , como o México , o Peru , a Guatemala e o Paraguai .
+
+Gold Entities vs. Pred Entities:
+Gold: ['México (LOC)', 'Peru (LOC)', 'Guatemala (LOC)', 'Paraguai (LOC)']
+Pred: ['México (ORG)', 'Peru (ORG)', 'Guatemala (ORG)', 'Paraguai (ORG)']
+
+=== Sentença 25 ===
+Texto: O Guarani também é idioma oficial no Paraguai juntamente com o Espanhol .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Guarani (MISC)', 'Paraguai (LOC)', 'Espanhol (MISC)']
+Pred: ['O Guarani (ORG)', 'Paraguai (LOC)', 'Espanhol (ORG)']
+
+=== Sentença 26 ===
+Texto: A caça , como base econômica de sobrevivência , é praticada na América somente por esparsos grupos indígenas em vias de integração .
+
+Gold Entities vs. Pred Entities:
+Gold: ['América (LOC)']
+Pred: ['América (ORG)']
+
+=== Sentença 27 ===
+Texto: O extrativismo vegetal aparece sempre como atividade complementar da agricultura e da pecuária , merecendo destaque a extração do látex da seringueira , em toda a Floresta Amazônica ( Brasil , Colômbia , Peru e Bolívia ) ; do quebracho , no Pantanal ( Argentina , Paraguai e Brasil ) ; de madeira , em quase toda a América Central , Brasil e Chile ; e ainda de babaçu e carnaúba , no Brasil .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Floresta Amazônica (LOC)', 'Brasil (LOC)', 'Colômbia (LOC)', 'Peru (LOC)', 'Bolívia (LOC)', 'Pantanal (LOC)', 'Argentina (LOC)', 'Paraguai (LOC)', 'Brasil (LOC)', 'América Central (LOC)', 'Brasil (LOC)', 'Chile (LOC)', 'Brasil (LOC)']
+Pred: ['Floresta Amazônica (LOC)', 'Brasil (LOC)', 'Colômbia (LOC)', 'Peru (LOC)', 'Bolívia (LOC)', 'Pantanal (LOC)', 'Argentina (LOC)', 'Paraguai (LOC)', 'Brasil (LOC)', 'América Central (LOC)', 'Brasil (LOC)', 'Chile (LOC)', 'Brasil (LOC)']
+
+=== Sentença 28 ===
+Texto: Na extração do petróleo , possuem grande destaque México , Venezuela , Brasil , Argentina , Colômbia e Equador .
+
+Gold Entities vs. Pred Entities:
+Gold: ['México (LOC)', 'Venezuela (LOC)', 'Brasil (LOC)', 'Argentina (LOC)', 'Colômbia (LOC)', 'Equador (LOC)']
+Pred: ['México (ORG)', 'Venezuela (ORG)', 'Brasil (ORG)', 'Argentina (ORG)', 'Colômbia (ORG)', 'Equador (ORG)']
+
+=== Sentença 29 ===
+Texto: O Brasil é o segundo produtor mundial de ferro ; o Chile , o Peru , sendo o Chile o maior produtor do mundo ; o Brasil é um dos cinco maiores produtores mundiais de manganês , além de grande produtor de estanho , minério do qual a Bolívia é grande exportadora .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Brasil (LOC)', 'Chile (LOC)', 'Peru (LOC)', 'Chile (LOC)', 'Brasil (LOC)', 'Bolívia (LOC)']
+Pred: ['Brasil (ORG)', 'Chile (LOC)', 'Peru (LOC)', 'Chile (LOC)', 'Brasil (ORG)', 'Bolívia (LOC)']
+
+=== Sentença 30 ===
+Texto: Devido principalmente à concentração das terras mais férteis nas mãos de poucos proprietários e ao grande número de agricultores sem terras para cultivar , surgiram nessas áreas muitos conflitos fundiários , o que originou projetos de reforma agrária que visam à distribuição mais igualitária da terra , em países como México , Bolívia , Chile , Peru e Cuba .
+
+Gold Entities vs. Pred Entities:
+Gold: ['México (LOC)', 'Bolívia (LOC)', 'Chile (LOC)', 'Peru (LOC)', 'Cuba (LOC)']
+Pred: ['México (LOC)', 'Bolívia (LOC)', 'Chile (LOC)', 'Peru (LOC)', 'Cuba (LOC)']
+
+=== Sentença 31 ===
+Texto: Como exemplos característicos desse sistema , podemos citar o café , responsável por uma parte substancial das rendas de exportação da Colômbia , Costa Rica , Guatemala e El Salvador , e a banana , com igual importância para o Panamá e Honduras , além de outros produtos de menor expressão .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Colômbia (LOC)', 'Costa Rica (LOC)', 'Guatemala (LOC)', 'El Salvador (LOC)', 'Panamá (LOC)', 'Honduras (LOC)']
+Pred: ['Colômbia (LOC)', 'Costa Rica (LOC)', 'Guatemala (LOC)', 'El Salvador (LOC)', 'Panamá (LOC)', 'Honduras (LOC)']
+
+=== Sentença 32 ===
+Texto: Brasil , Argentina e México são os países que possuem a maior quantidade de cabeças de gado .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Brasil (LOC)', 'Argentina (LOC)', 'México (LOC)']
+Pred: ['Brasil (ORG)', 'Argentina (ORG)', 'México (ORG)']
+
+=== Sentença 33 ===
+Texto: Nessa época , beneficiando-se das abundantes matérias-primas locais , dos baixos salários pagos à mão-de-obra e de uma certa especialização trazida pelos imigrantes , países como Brasil , México e Argentina , além de Venezuela , Chile , Colômbia e Peru , puderam implantar expressivos parques industriais .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Brasil (LOC)', 'México (LOC)', 'Argentina (LOC)', 'Venezuela (LOC)', 'Chile (LOC)', 'Colômbia (LOC)', 'Peru (LOC)']
+Pred: ['Nessa (ORG)', 'Brasil (LOC)', 'México (LOC)', 'Argentina (LOC)', 'Venezuela (LOC)', 'Chile (LOC)', 'Colômbia (LOC)', 'Peru (LOC)']
+
+=== Sentença 34 ===
+Texto: Nos demais países latino-americanos , principalmente da América Central , predominam indústrias de beneficiamento de produtos primários para exportação .
+
+Gold Entities vs. Pred Entities:
+Gold: ['América Central (LOC)']
+Pred: ['América Central (ORG)']
+
+=== Sentença 35 ===
+Texto: É maior nas nações latinas mais industrializadas -- Brasil , Argentina , Colômbia e México -- , reduzindo-se nos demais países .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Brasil (LOC)', 'Argentina (LOC)', 'Colômbia (LOC)', 'México (LOC)']
+Pred: ['Brasil (LOC)', 'Argentina (LOC)', 'Colômbia (LOC)', 'México (LOC)']
+
+=== Sentença 36 ===
+Texto: Na região mais densamente povoada da América do Sul e servida pela bacia dos rios Paraná , Paraguai e Uruguai ( bacia Platina ) vem sendo desenvolvida uma hidrovia que fará a interligação fluvial entre os quatro países do sudeste do continente .
+
+Gold Entities vs. Pred Entities:
+Gold: ['América do Sul (LOC)', 'Paraná (LOC)', 'Paraguai (LOC)', 'Uruguai (LOC)', 'bacia Platina (LOC)']
+Pred: ['América do Sul (LOC)', 'Paraná (ORG)', 'Paraguai (LOC)', 'Uruguai (LOC)', 'Platina (ORG)']
+
+=== Sentença 37 ===
+Texto: Tinha este género já alguns percursores como Raúl Brandão e sofria a influência das filosofias de Nietzsche ou Schopenhauer .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Raúl Brandão (PER)', 'Nietzsche (PER)', 'Schopenhauer (PER)']
+Pred: ['Raúl Brandão (PER)', 'Nietzsche (PER)', 'Schopenhauer (PER)']
+
+=== Sentença 38 ===
+Texto: É a vertente da obra do autor que menos interesse suscitará senão pelo quadro da miséria em Portugal que descreve com rigor jornalístico .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Portugal (LOC)']
+Pred: ['Portugal (ORG)']
+
+=== Sentença 39 ===
+Texto: Nos últimos anos da sua vida , Albino Forjaz de Sampaio dedicou-se essencialmente aos estudos de biblioteconomia , à história do livro e da tipografia .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Albino Forjaz de Sampaio (PER)']
+Pred: ['Albino Forjaz de Sampaio (PER)']
+
+=== Sentença 40 ===
+Texto: Morreu em Lisboa , a sua cidade de eleição , a escrever um artigo para um jornal .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Lisboa (LOC)']
+Pred: ['Morreu (PER)', 'Lisboa (LOC)']
+
+=== Sentença 41 ===
+Texto: A Espanha já o usava desde meados do século precedente .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Espanha (LOC)']
+Pred: ['A Espanha (LOC)']
+
+=== Sentença 42 ===
+Texto: Contudo , é o padrão internacional , sendo reconhecido por instituições internacionais como a Organização das Nações Unidas ou a União Postal Universal .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Organização das Nações Unidas (ORG)', 'União Postal Universal (ORG)']
+Pred: ['Organização das Nações Unidas (ORG)', 'União Postal Universal (ORG)']
+
+=== Sentença 43 ===
+Texto: Segundo a Bíblia , Jesus de Nazaré teria sido ungido após o seu baptismo , " cerca de trinta anos " depois do seu nascimento .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Bíblia (MISC)', 'Jesus de Nazaré (PER)']
+Pred: ['Segundo (PER)', 'Bíblia (ORG)', 'Jesus de Nazaré (PER)']
+
+=== Sentença 44 ===
+Texto: Os seus sucessores seguiram tal prática até que a memória da República Romana se foi esbatendo , quando começaram a usar explicitamente o seu ano de reinado .
+
+Gold Entities vs. Pred Entities:
+Gold: ['República Romana (LOC)']
+Pred: ['República Romana (LOC)']
+
+=== Sentença 45 ===
+Texto: Também a pacificação de uma região por Augusto serviu como ponto de partida para um calendário .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Augusto (PER)']
+Pred: ['Augusto (PER)']
+
+=== Sentença 46 ===
+Texto: -- ano este que é determinado pelas informações dadas por Flávio Josefo quanto aos eclipses lunares ocorridos na Páscoa e aos acontecimentos que acompanharam a sua morte , tal como foi calculado por Kepler .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Flávio Josefo (PER)', 'Páscoa (MISC)', 'Kepler (PER)']
+Pred: ['Flávio Josefo (PER)', 'Páscoa (MISC)', 'Kepler (PER)']
+
+=== Sentença 47 ===
+Texto: ) , estabelecendo o padrão da não existência de ano zero -- ainda que tenha usado o zero no seu computus , ou determinação da Páscoa cristã .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Páscoa (MISC)']
+Pred: ['Páscoa (ORG)']
+
+=== Sentença 48 ===
+Texto: A adoção do novo sistema de datação por Carlos Magno e pelos seus sucessores está na origem do sucesso do mesmo nos séculos seguintes , até à época atual .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Carlos Magno (PER)']
+Pred: ['Carlos Magno (PER)']
+
+=== Sentença 49 ===
+Texto: Aquiles tem ainda a característica de ser o mais belo dos heróis reunidos contra Tróia , assim como o melhor entre eles .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Aquiles (PER)', 'Tróia (LOC)']
+Pred: ['Aquiles (PER)', 'Tróia (LOC)']
+
+=== Sentença 50 ===
+Texto: afirmavam que Aquiles era invulnerável em todo o seu corpo , exceto em seu calcanhar ; ainda segundo estas versões de seu mito , sua morte teria sido causada por uma flecha envenenada que o teria atingido exatamente nesta parte de seu corpo .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Aquiles (PER)']
+Pred: ['Aquiles (PER)']
