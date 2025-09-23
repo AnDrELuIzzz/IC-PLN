@@ -1,0 +1,307 @@
+=== Análise de Erros - Hugging Face ===
+
+Erros de POS Tagging (23308):
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: Folha (Posição: 1)
+Gold: PROPN | Predito: NOUN
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: -- (Posição: 2)
+Gold: PUNCT | Predito: NOUN
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: Como (Posição: 3)
+Gold: ADV | Predito: LABEL_1
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: você (Posição: 4)
+Gold: PRON | Predito: LABEL_0
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: recebeu (Posição: 5)
+Gold: VERB | Predito: LABEL_1
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: a (Posição: 6)
+Gold: DET | Predito: NOUN
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: de (Posição: 8)
+Gold: SCONJ | Predito: NOUN
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: que (Posição: 9)
+Gold: SCONJ | Predito: NOUN
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: seria (Posição: 10)
+Gold: AUX | Predito: LABEL_1
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: substituído (Posição: 11)
+Gold: VERB | Predito: NOUN
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: ? (Posição: 12)
+Gold: PUNCT | Predito: NOUN
+
+Sentença ID: CF756-2
+Texto: Giovane -- Normalmente.
+Token: Giovane (Posição: 1)
+Gold: PROPN | Predito: NOUN
+
+Sentença ID: CF756-2
+Texto: Giovane -- Normalmente.
+Token: -- (Posição: 2)
+Gold: PUNCT | Predito: NOUN
+
+Sentença ID: CF756-2
+Texto: Giovane -- Normalmente.
+Token: Normalmente (Posição: 3)
+Gold: ADV | Predito: NOUN
+
+Sentença ID: CF756-2
+Texto: Giovane -- Normalmente.
+Token: . (Posição: 4)
+Gold: PUNCT | Predito: NOUN
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: Seleção (Posição: 1)
+Gold: NOUN | Predito: LABEL_0
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: é (Posição: 2)
+Gold: AUX | Predito: LABEL_1
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: isso (Posição: 3)
+Gold: PRON | Predito: NOUN
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: , (Posição: 4)
+Gold: PUNCT | Predito: NOUN
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: joga (Posição: 5)
+Gold: VERB | Predito: NOUN
+
+
+Erros de Lematização (9824):
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: Folha (Posição: 1)
+Gold: Folha | Predito: folha
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: recebeu (Posição: 5)
+Gold: receber | Predito: recebeu
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: a (Posição: 6)
+Gold: o | Predito: a
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: seria (Posição: 10)
+Gold: ser | Predito: seria
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: substituído (Posição: 11)
+Gold: substituir | Predito: substituído
+
+Sentença ID: CF756-2
+Texto: Giovane -- Normalmente.
+Token: Giovane (Posição: 1)
+Gold: Giovane | Predito: giovane
+
+Sentença ID: CF756-2
+Texto: Giovane -- Normalmente.
+Token: Normalmente (Posição: 3)
+Gold: normalmente | Predito: normal
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: Seleção (Posição: 1)
+Gold: seleção | Predito: seler
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: é (Posição: 2)
+Gold: ser | Predito: é
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: joga (Posição: 5)
+Gold: jogar | Predito: joga
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: está (Posição: 7)
+Gold: estar | Predito: está
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: tem (Posição: 11)
+Gold: ter | Predito: tem
+
+Sentença ID: CF756-4
+Texto: A melhor equipe é que deve jogar.
+Token: A (Posição: 1)
+Gold: o | Predito: a
+
+Sentença ID: CF756-4
+Texto: A melhor equipe é que deve jogar.
+Token: é (Posição: 4)
+Gold: ser | Predito: é
+
+Sentença ID: CF756-4
+Texto: A melhor equipe é que deve jogar.
+Token: deve (Posição: 6)
+Gold: dever | Predito: deve
+
+Sentença ID: CF757-2
+Texto: ... casos positivos de dengue em Monte Aprazível (38 km de Rio Preto-SP) foram divulgados ontem pelo Ersa (Escritório Regional de Saúde) de Rio Preto.
+Token: casos (Posição: 2)
+Gold: caso | Predito: casos
+
+Sentença ID: CF757-2
+Texto: ... casos positivos de dengue em Monte Aprazível (38 km de Rio Preto-SP) foram divulgados ontem pelo Ersa (Escritório Regional de Saúde) de Rio Preto.
+Token: positivos (Posição: 3)
+Gold: positivo | Predito: positivos
+
+Sentença ID: CF757-2
+Texto: ... casos positivos de dengue em Monte Aprazível (38 km de Rio Preto-SP) foram divulgados ontem pelo Ersa (Escritório Regional de Saúde) de Rio Preto.
+Token: Monte (Posição: 7)
+Gold: Monte | Predito: monte
+
+Sentença ID: CF757-2
+Texto: ... casos positivos de dengue em Monte Aprazível (38 km de Rio Preto-SP) foram divulgados ontem pelo Ersa (Escritório Regional de Saúde) de Rio Preto.
+Token: Aprazível (Posição: 8)
+Gold: Aprazível | Predito: aprazível
+
+Sentença ID: CF757-2
+Texto: ... casos positivos de dengue em Monte Aprazível (38 km de Rio Preto-SP) foram divulgados ontem pelo Ersa (Escritório Regional de Saúde) de Rio Preto.
+Token: Rio (Posição: 13)
+Gold: Rio | Predito: rio
+
+
+Erros de Dependências (27546):
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: Folha (Posição: 1)
+Gold: (0, 'root') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: -- (Posição: 2)
+Gold: (1, 'punct') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: Como (Posição: 3)
+Gold: (5, 'advmod') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: você (Posição: 4)
+Gold: (5, 'nsubj') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: recebeu (Posição: 5)
+Gold: (1, 'parataxis') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: a (Posição: 6)
+Gold: (7, 'det') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: notícia (Posição: 7)
+Gold: (5, 'obj') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: de (Posição: 8)
+Gold: (11, 'mark') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: que (Posição: 9)
+Gold: (11, 'mark') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: seria (Posição: 10)
+Gold: (11, 'aux:pass') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: substituído (Posição: 11)
+Gold: (7, 'acl') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: ? (Posição: 12)
+Gold: (1, 'punct') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-2
+Texto: Giovane -- Normalmente.
+Token: Giovane (Posição: 1)
+Gold: (0, 'root') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-2
+Texto: Giovane -- Normalmente.
+Token: -- (Posição: 2)
+Gold: (1, 'punct') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-2
+Texto: Giovane -- Normalmente.
+Token: Normalmente (Posição: 3)
+Gold: (1, 'parataxis') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-2
+Texto: Giovane -- Normalmente.
+Token: . (Posição: 4)
+Gold: (1, 'punct') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: Seleção (Posição: 1)
+Gold: (3, 'nsubj') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: é (Posição: 2)
+Gold: (3, 'cop') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: isso (Posição: 3)
+Gold: (0, 'root') | Predito: (1, 'nmod')
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: , (Posição: 4)
+Gold: (5, 'punct') | Predito: (1, 'nmod')
+
