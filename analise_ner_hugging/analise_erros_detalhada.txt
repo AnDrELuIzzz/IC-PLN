@@ -1,0 +1,12 @@
+=== ANÁLISE DETALHADA DE ERROS NER ===
+
+Total de sentenças: 50
+Total de entidades gold: 134
+Total de entidades preditas: 577
+
+Distribuição por categoria:
+• PER: Gold=13, Pred=0
+• LOC: Gold=108, Pred=0
+• ORG: Gold=3, Pred=0
+• MISC: Gold=10, Pred=577
+

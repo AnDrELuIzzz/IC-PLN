@@ -1,0 +1,164 @@
+=== ANÁLISE DE ERROS NER - HUGGING FACE ===
+
+📊 MÉTRICAS POR CATEGORIA:
+
+PER:
+  • Precisão: 0.00%
+  • Recall: 0.00%
+  • F1-Score: 0.00%
+  • Suporte: 540 entidades
+
+LOC:
+  • Precisão: 0.00%
+  • Recall: 0.00%
+  • F1-Score: 0.00%
+  • Suporte: 1219 entidades
+
+ORG:
+  • Precisão: 0.00%
+  • Recall: 0.00%
+  • F1-Score: 0.00%
+  • Suporte: 164 entidades
+
+MISC:
+  • Precisão: 0.10%
+  • Recall: 0.96%
+  • F1-Score: 0.18%
+  • Suporte: 104 entidades
+
+📈 ESTATÍSTICAS DE ERRO:
+• Total de erros de entidade: 3023
+• Erros de classificação: 2
+• Erros de fronteira: 0
+
+🔍 ERROS DE CLASSIFICAÇÃO (Top 20):
+Texto: Aristóteles
+Entidade: 'Aristóteles'
+Gold: PER → Pred: MISC
+
+Texto: Heródoto
+Entidade: 'Heródoto'
+Gold: PER → Pred: MISC
+
+🔍 ENTIDADES PERDIDAS (Top 20):
+Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+Entidade perdida: 'Bíblia' (MISC)
+
+Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+Entidade perdida: 'Cosmologia Bíblica' (MISC)
+
+Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+Entidade perdida: 'Terra' (LOC)
+
+Texto: Omar Khayyam foi um grande cientista , filósofo e poeta persa que viveu de 1048 a 1131 .
+Entidade perdida: 'Omar Khayyam' (PER)
+
+Texto: No entanto , Kepler não compreendeu os princípios por detrás das leis que descobriu .
+Entidade perdida: 'Kepler' (PER)
+
+Texto: Algumas partes do espectro podem ser observadas da superfície da Terra , enquanto outras partes só são observáveis de grandes altitudes ou no espaço .
+Entidade perdida: 'Terra' (LOC)
+
+Texto: Apesar de algumas ondas de rádio serem produzidas por objetos astronômicos na forma de radiação térmica , a maior parte das emissões de rádio que são observadas da Terra são vistas na forma de radiação síncrotron , que é produzida quando elétrons ou outras partículas eletricamente carregadas descrevem uma trajetória curva em um campo magnético .
+Entidade perdida: 'Terra' (LOC)
+
+Texto: Além da radiação eletromagnética outras coisas podem ser observadas da Terra que se originam de grandes distâncias .
+Entidade perdida: 'Terra' (LOC)
+
+Texto: A medição da velocidade radia e o movimento próprio mostra a cinemática desses sistemas através da Via Láctea .
+Entidade perdida: 'Via Láctea' (LOC)
+
+Texto: Astrobiologia é o estudo do advento e evolução os sistemas biológicos no universo , com ênfase particular na possibilidade de vida fora do planeta Terra .
+Entidade perdida: 'planeta Terra' (LOC)
+
+Texto: Os demais países americanos restantes tiveram colonização majoritariamente anglo-saxônica , com exceção de Québec , que é de colonização francesa ( portanto , latina ) e dos estados do sudoeste dos Estados Unidos , de colonização espanhola , além da Luisiana , que tem colonização francesa .
+Entidade perdida: 'Luisiana' (LOC)
+
+Texto: Os demais países americanos restantes tiveram colonização majoritariamente anglo-saxônica , com exceção de Québec , que é de colonização francesa ( portanto , latina ) e dos estados do sudoeste dos Estados Unidos , de colonização espanhola , além da Luisiana , que tem colonização francesa .
+Entidade perdida: 'Québec' (LOC)
+
+Texto: Os demais países americanos restantes tiveram colonização majoritariamente anglo-saxônica , com exceção de Québec , que é de colonização francesa ( portanto , latina ) e dos estados do sudoeste dos Estados Unidos , de colonização espanhola , além da Luisiana , que tem colonização francesa .
+Entidade perdida: 'Estados Unidos' (LOC)
+
+Texto: Ao final da Segunda Guerra Mundial , a criação da CEPAL consolidou o uso da expressão como sinônimo dos países menos desenvolvidos dos continentes americanos , e tem , em consequência , um significado mais próximo da economia e dos assuntos sociais .
+Entidade perdida: 'CEPAL' (ORG)
+
+Texto: Ao final da Segunda Guerra Mundial , a criação da CEPAL consolidou o uso da expressão como sinônimo dos países menos desenvolvidos dos continentes americanos , e tem , em consequência , um significado mais próximo da economia e dos assuntos sociais .
+Entidade perdida: 'Segunda Guerra Mundial' (MISC)
+
+Texto: A partir do Trópico de Capricórnio , na América do Sul , os tipos climáticos dominantes modificam-se progressivamente com o aumento da latitude , passando a predominar os climas temperados e frios .
+Entidade perdida: 'Trópico de Capricórnio' (LOC)
+
+Texto: A partir do Trópico de Capricórnio , na América do Sul , os tipos climáticos dominantes modificam-se progressivamente com o aumento da latitude , passando a predominar os climas temperados e frios .
+Entidade perdida: 'América do Sul' (LOC)
+
+Texto: Essas faixas vão desaparecendo à medida que diminui a distância em relação ao Pólo Sul , onde mesmo ao nível do mar já se encontram áreas permanentemente geladas .
+Entidade perdida: 'Pólo Sul' (LOC)
+
+Texto: Durante o verão , no hemisfério austral , as temperaturas mais elevadas ocorrem na parte central da América do Sul , atraindo ventos do oceano Atlântico .
+Entidade perdida: 'oceano Atlântico' (LOC)
+
+Texto: Durante o verão , no hemisfério austral , as temperaturas mais elevadas ocorrem na parte central da América do Sul , atraindo ventos do oceano Atlântico .
+Entidade perdida: 'América do Sul' (LOC)
+
+🔍 FALSOS POSITIVOS (Top 20):
+Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+Falso positivo: 'A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas, a maioria das quais são poética e não devem ser interpretada literalmente ; ver Cosmologia Bíblica.' (MISC)
+
+Texto: Omar Khayyam foi um grande cientista , filósofo e poeta persa que viveu de 1048 a 1131 .
+Falso positivo: 'Omar Khayyam foi um grande cientista, filósofo e poeta persa que viveu de 1048 a 11 .' (MISC)
+
+Texto: No entanto , Kepler não compreendeu os princípios por detrás das leis que descobriu .
+Falso positivo: 'No entanto, Kepler não compreende princípios por detrás das leis que descobriu.' (MISC)
+
+Texto: Algumas partes do espectro podem ser observadas da superfície da Terra , enquanto outras partes só são observáveis de grandes altitudes ou no espaço .
+Falso positivo: 'Algumas partes do espectro podem ser observadas da superfície da Terra, enquanto outras partes só são observáveis de grandes altitudes ou no espaço.' (MISC)
+
+Texto: Apesar de algumas ondas de rádio serem produzidas por objetos astronômicos na forma de radiação térmica , a maior parte das emissões de rádio que são observadas da Terra são vistas na forma de radiação síncrotron , que é produzida quando elétrons ou outras partículas eletricamente carregadas descrevem uma trajetória curva em um campo magnético .
+Falso positivo: 'Apesar de algumas ondas de rádio serem produzidas por objetos astron na forma de radiação térmica, a maior parte das emissões de rádio que são observadas da Terra são vistas na forma de radiação síncrotron, que é produzida quando elétrons ou outras partículas eletricamente carregadas descrevem uma trajetória curva em um campo magnético.' (MISC)
+
+Texto: Além da radiação eletromagnética outras coisas podem ser observadas da Terra que se originam de grandes distâncias .
+Falso positivo: 'Além da radiação eletromagnética outras coisas podem ser observadas da Terra que se originam de grandes distâncias.' (MISC)
+
+Texto: A medição da velocidade radia e o movimento próprio mostra a cinemática desses sistemas através da Via Láctea .
+Falso positivo: 'A medição da velocidade radia e o movimento próprio mostra a cinemática desses sistemas através da Via Láctea.' (MISC)
+
+Texto: Astrobiologia é o estudo do advento e evolução os sistemas biológicos no universo , com ênfase particular na possibilidade de vida fora do planeta Terra .
+Falso positivo: 'Astrobiologia é o estudo do advento e evolução os sistemas biológicos no universo, com ênfase particular na possibilidade de vida fora do planeta Terra.' (MISC)
+
+Texto: Os demais países americanos restantes tiveram colonização majoritariamente anglo-saxônica , com exceção de Québec , que é de colonização francesa ( portanto , latina ) e dos estados do sudoeste dos Estados Unidos , de colonização espanhola , além da Luisiana , que tem colonização francesa .
+Falso positivo: 'Os demais países americanos restantes tiveram colonização majoritariamente anglo - saxônica, com exceção de Québec, que é de colonização francesa ( portanto, latina ) e dos estados do sudoeste dos Estados Unidos, de colonização espanhola, além da Luisiana, que tem colonização francesa.' (MISC)
+
+Texto: Ao final da Segunda Guerra Mundial , a criação da CEPAL consolidou o uso da expressão como sinônimo dos países menos desenvolvidos dos continentes americanos , e tem , em consequência , um significado mais próximo da economia e dos assuntos sociais .
+Falso positivo: 'Ao final da Segunda Guerra Mundial, a criação da CEPAL consolidou o uso da expressão como sinônimo dos países menos desenvolvidos dos continentes americanos, e tem, em consequência, um significado mais próximo da economia e dos assuntos sociais.' (MISC)
+
+Texto: A partir do Trópico de Capricórnio , na América do Sul , os tipos climáticos dominantes modificam-se progressivamente com o aumento da latitude , passando a predominar os climas temperados e frios .
+Falso positivo: 'A partir do Trópico de Capricórnio, na América do Sul, os tipos clim dominantes modificam - se progress com o aumento da latitude, passando a predominar os clima tempera e frios.' (MISC)
+
+Texto: Essas faixas vão desaparecendo à medida que diminui a distância em relação ao Pólo Sul , onde mesmo ao nível do mar já se encontram áreas permanentemente geladas .
+Falso positivo: 'Essas faixas vão desaparece à medida que diminui a distância em relação ao Pólo Sul, onde mesmo ao nível do mar já se encontram áreas permanentemente geladas.' (MISC)
+
+Texto: Durante o verão , no hemisfério austral , as temperaturas mais elevadas ocorrem na parte central da América do Sul , atraindo ventos do oceano Atlântico .
+Falso positivo: 'Durante o verão, no hemisfério austral, as temperaturas mais elevadas ocorrem na parte central da América do Sul , atraindo ventos do oceano Atlântico.' (MISC)
+
+Texto: As primeiras são comuns na parte equatorial da América do Sul ou em áreas litorâneas .
+Falso positivo: 'As primeiras são comuns na parte equatorial da América do Sul ou em áreas litorâneas.' (MISC)
+
+Texto: Na América do Sul , em sua porção norte , merecem destaque os rios Madalena , na Colômbia , e Orinoco ( na Venezuela ) que deságuam no mar das Antilhas e banham importante área agropastoril da fachada norte do continente , além de outros rios importantes que ganham projeção nas suas partes central e meridional , como o colossal Amazonas e os rios Paraná , Paraguai e Uruguai , que formam a bacia Platina , todos desaguando no oceano Atlântico .
+Falso positivo: 'Na América do Sul, em sua porção norte, mere destaque os rios Madalena , na Colômbia, e Orinoco ( na Venezuela ) que deságua no mar das Antilhas e banham importante área agropastoril da fachada norte do continente, além de outros rios importantes que ganham projeção nas suas partes central e meridional, como o colo os rios Paraná, Paraguai e Uruguai, que formam a bacia Platina, todos desagua no oceano Atlântico.' (MISC)
+
+Texto: São os primeiros grupos europeus que passam a povoar e colonizar a chamada América .
+Falso positivo: 'São os primeiros grupos europeus que passam a povoar e colon chamada América.' (MISC)
+
+Texto: Esse sequestro de negros , se fez via migração forçada para colônias -- principalmente o Brasil e o Caribe .
+Falso positivo: 'Esse sequestro de negros, se fez via migração forçada para colônias - - principalmente o Brasil e o Caribe .' (MISC)
+
+Texto: Em todos os países é possível encontrar a presença dos povos que habitavam o continente americano antes da vinda dos europeus , embora grande parte dos mesmos tenha sido dizimada : no México , por exemplo , ainda é grande a herança e a influência da civilização Asteca .
+Falso positivo: 'Em todos os países é possível encontrar a presença dos povos que habitavam o continente americano antes da vinda dos europeus, embora grande parte dos mesmos tenha sido dizima : no México, por exemplo , ainda é grande a herança e a influência da civilização Asteca.' (MISC)
+
+Texto: Os peruanos também têm forte influência da civilização Inca , antiga habitante do oeste da América do Sul .
+Falso positivo: 'Os peruanos também têm forte influência da civilização Inca, antiga habitante do oeste da América do Sul.' (MISC)
+
+Texto: Os países do Caribe , ademais do Brasil , Venezuela e Colômbia apresentam forte influência africana .
+Falso positivo: 'Os países do Caribe, ademais do Brasil , Venezuela e Colômbia apresentam forte influência africana.' (MISC)
+

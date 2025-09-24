@@ -122,7 +122,7 @@ def evaluate_model_stanza(nlp, sentences, output_path, max_sent=50):
 # ==== Bloco Principal de Execução ====
 if __name__ == "__main__":
     # Caminho para o arquivo WikiNER (ajuste se necessário)
-    wikiner_path = "/home/anrdre/IC-NLP/5462500/aij-wikiner-pt-wp3"
+    wikiner_path = "/home/andre/Dev-Ubuntu/IC/Corupus/5462500/aij-wikiner-pt-wp3"
     
     # Verifica se o arquivo de dados existe
     if not os.path.exists(wikiner_path):

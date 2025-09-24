@@ -1,0 +1,539 @@
+=== ANÁLISE NER - HUGGING FACE (LeNER-Br) ===
+Modelo utilizado: pierreguillou/bert-base-cased-pt-lenerbr
+Sentenças processadas: 50
+Dispositivo: cpu
+
+=== Métricas NER ===
++----------------+---------+
+| Métrica        | Valor   |
++================+=========+
+| Precisão (NER) | 0.00%   |
++----------------+---------+
+| Recall (NER)   | 0.00%   |
++----------------+---------+
+| F1 (NER)       | 0.00%   |
++----------------+---------+
+
+=== ANÁLISE DE ERROS ===
+Padrões de erro identificados:
+
+• Entidades perdidas: 134
+• Falsos positivos: 577
+
+• 226: 2 perdidas de 2 (100.0%)
+• 8: 3 perdidas de 3 (100.0%)
+• 64: 1 perdidas de 1 (100.0%)
+• 18: 1 perdidas de 1 (100.0%)
+• 125: 2 perdidas de 2 (100.0%)
+• 86: 2 perdidas de 2 (100.0%)
+• 45: 1 perdidas de 1 (100.0%)
+• 12: 1 perdidas de 1 (100.0%)
+• 88: 1 perdidas de 1 (100.0%)
+• 19: 2 perdidas de 2 (100.0%)
+• 16: 2 perdidas de 2 (100.0%)
+• 77: 2 perdidas de 2 (100.0%)
+• 34: 3 perdidas de 3 (100.0%)
+• 70: 3 perdidas de 3 (100.0%)
+• 81: 2 perdidas de 2 (100.0%)
+• 7: 2 perdidas de 2 (100.0%)
+• 169: 1 perdidas de 1 (100.0%)
+• 206: 1 perdidas de 1 (100.0%)
+• 9: 2 perdidas de 2 (100.0%)
+• 212: 1 perdidas de 1 (100.0%)
+• 347: 1 perdidas de 1 (100.0%)
+• 6: 1 perdidas de 1 (100.0%)
+• 119: 1 perdidas de 1 (100.0%)
+• 76: 1 perdidas de 1 (100.0%)
+• 116: 1 perdidas de 1 (100.0%)
+• 109: 2 perdidas de 2 (100.0%)
+• 105: 1 perdidas de 1 (100.0%)
+• 152: 2 perdidas de 2 (100.0%)
+• 17: 1 perdidas de 1 (100.0%)
+• 258: 1 perdidas de 1 (100.0%)
+• 113: 2 perdidas de 2 (100.0%)
+• 110: 1 perdidas de 1 (100.0%)
+• 268: 1 perdidas de 1 (100.0%)
+• 95: 1 perdidas de 1 (100.0%)
+• 89: 2 perdidas de 2 (100.0%)
+• 55: 2 perdidas de 2 (100.0%)
+• 205: 1 perdidas de 1 (100.0%)
+• 54: 1 perdidas de 1 (100.0%)
+• 185: 1 perdidas de 1 (100.0%)
+• 65: 1 perdidas de 1 (100.0%)
+• 156: 1 perdidas de 1 (100.0%)
+• 100: 2 perdidas de 2 (100.0%)
+• 39: 1 perdidas de 1 (100.0%)
+• 114: 1 perdidas de 1 (100.0%)
+• 107: 1 perdidas de 1 (100.0%)
+• 99: 2 perdidas de 2 (100.0%)
+• 61: 1 perdidas de 1 (100.0%)
+• 46: 1 perdidas de 1 (100.0%)
+• 366: 1 perdidas de 1 (100.0%)
+• 355: 1 perdidas de 1 (100.0%)
+• 151: 2 perdidas de 2 (100.0%)
+• 101: 1 perdidas de 1 (100.0%)
+• 75: 1 perdidas de 1 (100.0%)
+• 444: 1 perdidas de 1 (100.0%)
+• 405: 1 perdidas de 1 (100.0%)
+• 376: 1 perdidas de 1 (100.0%)
+• 338: 1 perdidas de 1 (100.0%)
+• 343: 1 perdidas de 1 (100.0%)
+• 118: 1 perdidas de 1 (100.0%)
+• 106: 1 perdidas de 1 (100.0%)
+• 10: 1 perdidas de 1 (100.0%)
+• 82: 1 perdidas de 1 (100.0%)
+• 52: 1 perdidas de 1 (100.0%)
+• 190: 2 perdidas de 2 (100.0%)
+• 59: 1 perdidas de 1 (100.0%)
+• 90: 2 perdidas de 2 (100.0%)
+• 51: 2 perdidas de 2 (100.0%)
+• 62: 1 perdidas de 1 (100.0%)
+• 123: 3 perdidas de 3 (100.0%)
+• 27: 1 perdidas de 1 (100.0%)
+• 56: 2 perdidas de 2 (100.0%)
+• 181: 1 perdidas de 1 (100.0%)
+• 126: 1 perdidas de 1 (100.0%)
+• 71: 3 perdidas de 3 (100.0%)
+• 132: 1 perdidas de 1 (100.0%)
+• 339: 1 perdidas de 1 (100.0%)
+• 330: 1 perdidas de 1 (100.0%)
+• 281: 1 perdidas de 1 (100.0%)
+• 201: 1 perdidas de 1 (100.0%)
+• 261: 1 perdidas de 1 (100.0%)
+• 249: 1 perdidas de 1 (100.0%)
+• 390: 1 perdidas de 1 (100.0%)
+• 218: 1 perdidas de 1 (100.0%)
+• 208: 1 perdidas de 1 (100.0%)
+• 272: 1 perdidas de 1 (100.0%)
+• 68: 1 perdidas de 1 (100.0%)
+• 238: 1 perdidas de 1 (100.0%)
+• 58: 1 perdidas de 1 (100.0%)
+• 357: 1 perdidas de 1 (100.0%)
+• 350: 1 perdidas de 1 (100.0%)
+• 325: 1 perdidas de 1 (100.0%)
+• 335: 1 perdidas de 1 (100.0%)
+• 21: 1 perdidas de 1 (100.0%)
+• 194: 1 perdidas de 1 (100.0%)
+• 245: 1 perdidas de 1 (100.0%)
+• 182: 1 perdidas de 1 (100.0%)
+• 244: 1 perdidas de 1 (100.0%)
+• 233: 1 perdidas de 1 (100.0%)
+• 168: 1 perdidas de 1 (100.0%)
+• 143: 1 perdidas de 1 (100.0%)
+• 252: 1 perdidas de 1 (100.0%)
+• 234: 1 perdidas de 1 (100.0%)
+• 57: 1 perdidas de 1 (100.0%)
+
+Exemplos de entidades perdidas (top 10):
+1. Sent 1: '208' (226)
+   Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+
+2. Sent 1: '2' (8)
+   Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+
+3. Sent 1: '59' (64)
+   Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+
+4. Sent 2: '0' (12)
+   Texto: Omar Khayyam foi um grande cientista , filósofo e poeta persa que viveu de 1048 a 1131 .
+
+5. Sent 3: '13' (19)
+   Texto: No entanto , Kepler não compreendeu os princípios por detrás das leis que descobriu .
+
+6. Sent 4: '65' (70)
+   Texto: Algumas partes do espectro podem ser observadas da superfície da Terra , enquanto outras partes só são observáveis de grandes altitudes ou no espaço .
+
+7. Sent 5: '164' (169)
+   Texto: Apesar de algumas ondas de rádio serem produzidas por objetos astronômicos na forma de radiação térmica , a maior parte das emissões de rádio que são observadas da Terra são vistas na forma de radiação síncrotron , que é produzida quando elétrons ou outras partículas eletricamente carregadas descrevem uma trajetória curva em um campo magnético .
+
+8. Sent 6: '71' (76)
+   Texto: Além da radiação eletromagnética outras coisas podem ser observadas da Terra que se originam de grandes distâncias .
+
+9. Sent 7: '99' (109)
+   Texto: A medição da velocidade radia e o movimento próprio mostra a cinemática desses sistemas através da Via Láctea .
+
+10. Sent 8: '139' (152)
+   Texto: Astrobiologia é o estudo do advento e evolução os sistemas biológicos no universo , com ênfase particular na possibilidade de vida fora do planeta Terra .
+
+Exemplos de falsos positivos (top 10):
+1. Sent 1: '16' (18)
+   Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+
+2. Sent 1: '48' (84)
+   Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+
+3. Sent 1: '87' (125)
+   Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+
+4. Sent 1: '126' (127)
+   Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+
+5. Sent 1: '128' (149)
+   Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+
+6. Sent 1: '150' (157)
+   Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+
+7. Sent 1: '208' (223)
+   Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+
+8. Sent 1: '223' (228)
+   Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+
+9. Sent 1: '46' (47)
+   Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+
+10. Sent 1: '29' (35)
+   Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+
+
+=== DETALHES POR SENTENÇA ===
+=== Sentença 1 ===
+Texto: A Bíblia contém um número de afirmações sobre a posição da Terra no universo e sobre a natureza das estrelas e dos planetas , a maioria das quais são poéticas e não devem ser interpretadas literalmente ; ver Cosmologia Bíblica .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Bíblia (MISC)', 'Terra (LOC)', 'Cosmologia Bíblica (MISC)']
+Pred: ['A (MISC)', 'Bíblia contém (MISC)', 'um (MISC)', 'número de (MISC)', 'afirma (MISC)', 'ções sobre (MISC)', 'a (MISC)', 'posição da Terra no universo e sobre (MISC)', 'a (MISC)', 'natureza das estrelas e dos planetas , (MISC)', 'a (MISC)', 'maioria das quais são (MISC)', 'poética (MISC)', 's e não devem ser interpretadas literalmente ; ver (MISC)', 'Cosmologia Bíbl (MISC)', 'ica . (MISC)']
+
+=== Sentença 2 ===
+Texto: Omar Khayyam foi um grande cientista , filósofo e poeta persa que viveu de 1048 a 1131 .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Omar Khayyam (PER)']
+Pred: ['Omar Khayyam foi (MISC)', 'um (MISC)', 'grande (MISC)', 'cientista , (MISC)', 'filósofo e poeta persa que viveu de (MISC)', '10 (MISC)', '48 (MISC)', 'a 11 (MISC)', '31 . (MISC)']
+
+=== Sentença 3 ===
+Texto: No entanto , Kepler não compreendeu os princípios por detrás das leis que descobriu .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Kepler (PER)']
+Pred: ['No entanto , Kepler não compreende (MISC)', 'u (MISC)', 'os princípios por detrás das leis que (MISC)', 'descobriu (MISC)', '. (MISC)']
+
+=== Sentença 4 ===
+Texto: Algumas partes do espectro podem ser observadas da superfície da Terra , enquanto outras partes só são observáveis de grandes altitudes ou no espaço .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Terra (LOC)']
+Pred: ['Algumas (MISC)', 'partes do espectro podem ser observadas (MISC)', 'da (MISC)', 'superfície da Terra (MISC)', ', enquanto (MISC)', 'outras partes só são observáveis de grandes altitudes ou no espaço . (MISC)']
+
+=== Sentença 5 ===
+Texto: Apesar de algumas ondas de rádio serem produzidas por objetos astronômicos na forma de radiação térmica , a maior parte das emissões de rádio que são observadas da Terra são vistas na forma de radiação síncrotron , que é produzida quando elétrons ou outras partículas eletricamente carregadas descrevem uma trajetória curva em um campo magnético .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Terra (LOC)']
+Pred: ['Apesar (MISC)', 'de (MISC)', 'algumas ondas (MISC)', 'de rádio serem produzidas por objetos astronômicos na forma de radiação térmica (MISC)', ', a maior parte (MISC)', 'das emissões de rádio que são observadas da Terra são vistas na forma de radiação sí (MISC)', 'nc (MISC)', 'rotron (MISC)', ', (MISC)', 'que é produzida quando elétrons ou outras (MISC)', 'partículas (MISC)', 'eletricamente carregadas descrevem uma trajetória curva em um campo magnético . (MISC)']
+
+=== Sentença 6 ===
+Texto: Além da radiação eletromagnética outras coisas podem ser observadas da Terra que se originam de grandes distâncias .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Terra (LOC)']
+Pred: ['Além (MISC)', 'da (MISC)', 'radiação eletromagnética outras coisas podem ser observadas da Terra que se originam de grandes distâncias . (MISC)']
+
+=== Sentença 7 ===
+Texto: A medição da velocidade radia e o movimento próprio mostra a cinemática desses sistemas através da Via Láctea .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Via Láctea (LOC)']
+Pred: ['A medição da (MISC)', 'velocidade (MISC)', 'radia e (MISC)', 'o (MISC)', 'movimento próprio mostra a cinemática desses sistemas através da Via (MISC)', 'Lá (MISC)', 'cte (MISC)', 'a (MISC)', '. (MISC)']
+
+=== Sentença 8 ===
+Texto: Astrobiologia é o estudo do advento e evolução os sistemas biológicos no universo , com ênfase particular na possibilidade de vida fora do planeta Terra .
+
+Gold Entities vs. Pred Entities:
+Gold: ['planeta Terra (LOC)']
+Pred: ['Astrobiologia (MISC)', 'é (MISC)', 'o (MISC)', 'estudo do advento e evolução os sistemas biológicos no universo , com ênfase particular (MISC)', 'na (MISC)', 'possibilidade de vida fora (MISC)', 'do planeta (MISC)', 'Terra . (MISC)']
+
+=== Sentença 9 ===
+Texto: Os demais países americanos restantes tiveram colonização majoritariamente anglo-saxônica , com exceção de Québec , que é de colonização francesa ( portanto , latina ) e dos estados do sudoeste dos Estados Unidos , de colonização espanhola , além da Luisiana , que tem colonização francesa .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Québec (LOC)', 'Estados Unidos (LOC)', 'Luisiana (LOC)']
+Pred: ['Os demais países americanos restantes tiveram (MISC)', 'colonização majoritariamente (MISC)', 'anglo-sa (MISC)', 'x (MISC)', 'ônica (MISC)', ', com (MISC)', 'exceção de Qué (MISC)', 'be (MISC)', 'c (MISC)', ', (MISC)', 'que (MISC)', 'é (MISC)', 'de (MISC)', 'colonização (MISC)', 'francesa ( portanto , latina (MISC)', ') e (MISC)', 'dos estados do sudoeste dos Estados Unidos , de (MISC)', 'colonização (MISC)', 'espanhola , (MISC)', 'além (MISC)', 'da Luisiana (MISC)', ', (MISC)', 'que tem (MISC)', 'colonização francesa (MISC)', '. (MISC)']
+
+=== Sentença 10 ===
+Texto: Ao final da Segunda Guerra Mundial , a criação da CEPAL consolidou o uso da expressão como sinônimo dos países menos desenvolvidos dos continentes americanos , e tem , em consequência , um significado mais próximo da economia e dos assuntos sociais .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Segunda Guerra Mundial (MISC)', 'CEPAL (ORG)']
+Pred: ['Ao (MISC)', 'final da (MISC)', 'Segunda Guerra Mundial , (MISC)', 'a (MISC)', 'criação da (MISC)', 'CEPA (MISC)', 'L consolidou o uso (MISC)', 'da expressão (MISC)', 'como sinônimo dos países menos desenvolvidos dos continentes (MISC)', 'americanos (MISC)', ', e (MISC)', 'tem , em consequência (MISC)', ', (MISC)', 'um (MISC)', 'significado mais (MISC)', 'próximo da (MISC)', 'economia e dos (MISC)', 'assuntos (MISC)', 'sociais . (MISC)']
+
+=== Sentença 11 ===
+Texto: A partir do Trópico de Capricórnio , na América do Sul , os tipos climáticos dominantes modificam-se progressivamente com o aumento da latitude , passando a predominar os climas temperados e frios .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Trópico de Capricórnio (LOC)', 'América do Sul (LOC)']
+Pred: ['A partir (MISC)', 'do (MISC)', 'Tr (MISC)', 'ópico de Capricórnio , (MISC)', 'na América (MISC)', 'do Sul , os tipos (MISC)', 'clim (MISC)', 'áticos dominantes modificam-se (MISC)', 'progress (MISC)', 'ivamente (MISC)', 'com o aumento (MISC)', 'da latitude , (MISC)', 'passando a (MISC)', 'predominar os (MISC)', 'clima (MISC)', 's (MISC)', 'tempera (MISC)', 'dos e frios . (MISC)']
+
+=== Sentença 12 ===
+Texto: Essas faixas vão desaparecendo à medida que diminui a distância em relação ao Pólo Sul , onde mesmo ao nível do mar já se encontram áreas permanentemente geladas .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Pólo Sul (LOC)']
+Pred: ['Essas faixas vão desaparecendo à (MISC)', 'medida (MISC)', 'que diminui a (MISC)', 'distância (MISC)', 'em relação ao (MISC)', 'Pó (MISC)', 'lo Sul (MISC)', ', (MISC)', 'onde mesmo ao (MISC)', 'nível do (MISC)', 'mar já se encontram (MISC)', 'áreas (MISC)', 'permanentemente geladas . (MISC)']
+
+=== Sentença 13 ===
+Texto: Durante o verão , no hemisfério austral , as temperaturas mais elevadas ocorrem na parte central da América do Sul , atraindo ventos do oceano Atlântico .
+
+Gold Entities vs. Pred Entities:
+Gold: ['América do Sul (LOC)', 'oceano Atlântico (LOC)']
+Pred: ['Durante (MISC)', 'o (MISC)', 'verão (MISC)', ', no (MISC)', 'hemisfério austral , as temperaturas mais elevadas ocorrem na parte central da (MISC)', 'América (MISC)', 'do Sul (MISC)', ', (MISC)', 'atraindo ventos do (MISC)', 'oceano (MISC)', 'Atlântico . (MISC)']
+
+=== Sentença 14 ===
+Texto: As primeiras são comuns na parte equatorial da América do Sul ou em áreas litorâneas .
+
+Gold Entities vs. Pred Entities:
+Gold: ['América do Sul (LOC)']
+Pred: ['As primeiras são comuns na (MISC)', 'parte (MISC)', 'equatorial da (MISC)', 'América (MISC)', 'do Sul ou em (MISC)', 'áreas (MISC)', 'lit (MISC)', 'or (MISC)', 'âneas . (MISC)']
+
+=== Sentença 15 ===
+Texto: Na América do Sul , em sua porção norte , merecem destaque os rios Madalena , na Colômbia , e Orinoco ( na Venezuela ) que deságuam no mar das Antilhas e banham importante área agropastoril da fachada norte do continente , além de outros rios importantes que ganham projeção nas suas partes central e meridional , como o colossal Amazonas e os rios Paraná , Paraguai e Uruguai , que formam a bacia Platina , todos desaguando no oceano Atlântico .
+
+Gold Entities vs. Pred Entities:
+Gold: ['América do Sul (LOC)', 'Madalena (LOC)', 'Colômbia (LOC)', 'Orinoco (LOC)', 'Venezuela (LOC)', 'mar das Antilhas (LOC)', 'Amazonas (LOC)', 'Paraná (LOC)', 'Paraguai (LOC)', 'Uruguai (LOC)', 'bacia Platina (LOC)', 'oceano Atlântico (LOC)']
+Pred: ['Na América (MISC)', 'do Sul , em sua porção norte , merecem destaque os (MISC)', 'rios (MISC)', 'Madalena (MISC)', ', na (MISC)', 'Colômbia (MISC)', ', (MISC)', 'e (MISC)', 'Orino (MISC)', 'co (MISC)', '( na (MISC)', 'Venezuela (MISC)', ') (MISC)', 'que deságuam no mar das (MISC)', 'Ant (MISC)', 'ilhas e banham (MISC)', 'importante área (MISC)', 'agropastoril da fachada norte (MISC)', 'do (MISC)', 'continente (MISC)', ', além (MISC)', 'de outros (MISC)', 'rios (MISC)', 'importantes que ganham projeção nas suas partes central e meridional , como (MISC)', 'o (MISC)', 'colossal Amazonas e os (MISC)', 'rios (MISC)', 'Paraná , Paraguai e Uruguai , que formam (MISC)', 'a (MISC)', 'bacia (MISC)', 'Pla (MISC)', 'tina , todos desaguando no (MISC)', 'oceano (MISC)', 'Atlântico . (MISC)']
+
+=== Sentença 16 ===
+Texto: São os primeiros grupos europeus que passam a povoar e colonizar a chamada América .
+
+Gold Entities vs. Pred Entities:
+Gold: ['América (LOC)']
+Pred: ['São os primeiros grupos europeus que passam a povo (MISC)', 'ar (MISC)', 'e colonizar (MISC)', 'a (MISC)', 'chamada (MISC)', 'América (MISC)', '. (MISC)']
+
+=== Sentença 17 ===
+Texto: Esse sequestro de negros , se fez via migração forçada para colônias -- principalmente o Brasil e o Caribe .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Brasil (LOC)', 'Caribe (LOC)']
+Pred: ['Esse sequestro de negros , se fez via migração forçada para colônias -- principalmente o Brasil e o Caribe . (MISC)']
+
+=== Sentença 18 ===
+Texto: Em todos os países é possível encontrar a presença dos povos que habitavam o continente americano antes da vinda dos europeus , embora grande parte dos mesmos tenha sido dizimada : no México , por exemplo , ainda é grande a herança e a influência da civilização Asteca .
+
+Gold Entities vs. Pred Entities:
+Gold: ['México (LOC)', 'Asteca (MISC)']
+Pred: ['Em todos (MISC)', 'os países (MISC)', 'é (MISC)', 'possível (MISC)', 'encontrar a (MISC)', 'presença dos povos que habitavam (MISC)', 'o (MISC)', 'continente (MISC)', 'americano antes da (MISC)', 'vinda dos europeus (MISC)', ', embora grande (MISC)', 'parte dos mesmos (MISC)', 'tenha (MISC)', 'sido (MISC)', 'diz (MISC)', 'imada : no México , (MISC)', 'por (MISC)', 'exemplo , ainda é grande (MISC)', 'a (MISC)', 'herança e a influência da civilização Asteca . (MISC)']
+
+=== Sentença 19 ===
+Texto: Os peruanos também têm forte influência da civilização Inca , antiga habitante do oeste da América do Sul .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Inca (LOC)', 'América do Sul (LOC)']
+Pred: ['Os peruanos também têm (MISC)', 'forte (MISC)', 'influência da civilização Inca (MISC)', ', (MISC)', 'antiga habitante do oeste da (MISC)', 'América (MISC)', 'do Sul . (MISC)']
+
+=== Sentença 20 ===
+Texto: Os países do Caribe , ademais do Brasil , Venezuela e Colômbia apresentam forte influência africana .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Caribe (LOC)', 'Brasil (LOC)', 'Venezuela (LOC)', 'Colômbia (LOC)']
+Pred: ['Os países do Caribe , ademais do Brasil , Venezuela e Colômbia apresentam (MISC)', 'forte (MISC)', 'influência (MISC)', 'africana (MISC)', '. (MISC)']
+
+=== Sentença 21 ===
+Texto: O Haiti é um país cuja esmagadora maioria da população é negra ( apesar da colonização francesa e do idioma pátrio do Haiti ser o francês ) .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Haiti (LOC)', 'Haiti (LOC)']
+Pred: ['O (MISC)', 'Haiti é (MISC)', 'um país (MISC)', 'cuja esma (MISC)', 'gadora maioria da população (MISC)', 'é (MISC)', 'negra (MISC)', '( (MISC)', 'apesar da (MISC)', 'colonização (MISC)', 'francesa (MISC)', 'e do (MISC)', 'idioma pátrio do Haiti ser o francês (MISC)', ') . (MISC)']
+
+=== Sentença 22 ===
+Texto: O Brasil também tem grandes concentrações de descendentes de negros africanos e abriga a maior população negra fora da África ( considerando-se todos aqueles que , formalmente , tem ancestrais africanos ) .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Brasil (LOC)', 'África (LOC)']
+Pred: ['O (MISC)', 'Brasil também tem grandes concentrações de descendentes de negros (MISC)', 'africanos (MISC)', 'e abriga a maior (MISC)', 'população negra (MISC)', 'fora (MISC)', 'da África (MISC)', '( considerando-se todos aqueles que (MISC)', ', (MISC)', 'formalmente , tem (MISC)', 'ancestrais africanos (MISC)', ') . (MISC)']
+
+=== Sentença 23 ===
+Texto: O Espanhol é o idioma predominante da vasta maioria dos países latino-americanos .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Espanhol (MISC)']
+Pred: ['O (MISC)', 'Espanhol é (MISC)', 'o idioma predominante (MISC)', 'da vasta maioria dos países latino-americanos . (MISC)']
+
+=== Sentença 24 ===
+Texto: Em outras , existe uma grande quantidade de falantes das línguas indígenas , como o México , o Peru , a Guatemala e o Paraguai .
+
+Gold Entities vs. Pred Entities:
+Gold: ['México (LOC)', 'Peru (LOC)', 'Guatemala (LOC)', 'Paraguai (LOC)']
+Pred: ['Em outras , existe (MISC)', 'uma grande quantidade (MISC)', 'de falantes das (MISC)', 'línguas (MISC)', 'indígenas , como o México , o Peru , (MISC)', 'a (MISC)', 'Guatemala (MISC)', 'e o (MISC)', 'Paraguai . (MISC)']
+
+=== Sentença 25 ===
+Texto: O Guarani também é idioma oficial no Paraguai juntamente com o Espanhol .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Guarani (MISC)', 'Paraguai (LOC)', 'Espanhol (MISC)']
+Pred: ['O (MISC)', 'Guarani também é (MISC)', 'idioma oficial (MISC)', 'no Paraguai (MISC)', 'juntamente (MISC)', 'com (MISC)', 'o (MISC)', 'Espanhol . (MISC)']
+
+=== Sentença 26 ===
+Texto: A caça , como base econômica de sobrevivência , é praticada na América somente por esparsos grupos indígenas em vias de integração .
+
+Gold Entities vs. Pred Entities:
+Gold: ['América (LOC)']
+Pred: ['A caça , como (MISC)', 'base (MISC)', 'econômica de sobrevivência , é praticada na América somente por esparsos grupos indígenas (MISC)', 'em vias (MISC)', 'de (MISC)', 'integração (MISC)', '. (MISC)']
+
+=== Sentença 27 ===
+Texto: O extrativismo vegetal aparece sempre como atividade complementar da agricultura e da pecuária , merecendo destaque a extração do látex da seringueira , em toda a Floresta Amazônica ( Brasil , Colômbia , Peru e Bolívia ) ; do quebracho , no Pantanal ( Argentina , Paraguai e Brasil ) ; de madeira , em quase toda a América Central , Brasil e Chile ; e ainda de babaçu e carnaúba , no Brasil .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Floresta Amazônica (LOC)', 'Brasil (LOC)', 'Colômbia (LOC)', 'Peru (LOC)', 'Bolívia (LOC)', 'Pantanal (LOC)', 'Argentina (LOC)', 'Paraguai (LOC)', 'Brasil (LOC)', 'América Central (LOC)', 'Brasil (LOC)', 'Chile (LOC)', 'Brasil (LOC)']
+Pred: ['O (MISC)', 'extrativismo vegetal (MISC)', 'aparece sempre como (MISC)', 'atividade complementar da (MISC)', 'agricultura e (MISC)', 'da (MISC)', 'pecuária , merecendo destaque (MISC)', 'a extração (MISC)', 'do látex da seringueira , em toda (MISC)', 'a Floresta Amaz (MISC)', 'ônica (MISC)', '( (MISC)', 'Brasil , Colômbia , Peru e Bolívia ) (MISC)', '; (MISC)', 'do quebracho , no Pantanal ( Argentina , Paraguai e Brasil ) ; de madeira , em quase toda a América Central , Brasil e Chile ; (MISC)', 'e (MISC)', 'ainda de ba (MISC)', 'ba (MISC)', 'çu e (MISC)', 'carna (MISC)', 'ú (MISC)', 'ba (MISC)', ', no Brasil . (MISC)']
+
+=== Sentença 28 ===
+Texto: Na extração do petróleo , possuem grande destaque México , Venezuela , Brasil , Argentina , Colômbia e Equador .
+
+Gold Entities vs. Pred Entities:
+Gold: ['México (LOC)', 'Venezuela (LOC)', 'Brasil (LOC)', 'Argentina (LOC)', 'Colômbia (LOC)', 'Equador (LOC)']
+Pred: ['Na (MISC)', 'extração (MISC)', 'do (MISC)', 'petróleo (MISC)', ', possuem grande destaque México , Venezuela , Brasil , Argentina , Colômbia (MISC)', 'e (MISC)', 'Equador . (MISC)']
+
+=== Sentença 29 ===
+Texto: O Brasil é o segundo produtor mundial de ferro ; o Chile , o Peru , sendo o Chile o maior produtor do mundo ; o Brasil é um dos cinco maiores produtores mundiais de manganês , além de grande produtor de estanho , minério do qual a Bolívia é grande exportadora .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Brasil (LOC)', 'Chile (LOC)', 'Peru (LOC)', 'Chile (LOC)', 'Brasil (LOC)', 'Bolívia (LOC)']
+Pred: ['O Brasil é o segundo (MISC)', 'produtor (MISC)', 'mundial de ferro ; o Chile , (MISC)', 'o (MISC)', 'Peru , sendo o Chile o maior (MISC)', 'produtor do (MISC)', 'mundo ; o Brasil é um dos cinco maiores (MISC)', 'produtores (MISC)', 'mundiais de mang (MISC)', 'an (MISC)', 'ês , além de grande (MISC)', 'produtor (MISC)', 'de estanho , (MISC)', 'minério (MISC)', 'do qual a Bolívia é grande (MISC)', 'expor (MISC)', 'tadora . (MISC)']
+
+=== Sentença 30 ===
+Texto: Devido principalmente à concentração das terras mais férteis nas mãos de poucos proprietários e ao grande número de agricultores sem terras para cultivar , surgiram nessas áreas muitos conflitos fundiários , o que originou projetos de reforma agrária que visam à distribuição mais igualitária da terra , em países como México , Bolívia , Chile , Peru e Cuba .
+
+Gold Entities vs. Pred Entities:
+Gold: ['México (LOC)', 'Bolívia (LOC)', 'Chile (LOC)', 'Peru (LOC)', 'Cuba (LOC)']
+Pred: ['Devido principalmente (MISC)', 'à (MISC)', 'concentração das terras mais (MISC)', 'fér (MISC)', 'teis nas mãos de poucos proprietários e (MISC)', 'ao grande número (MISC)', 'de (MISC)', 'agricultores (MISC)', 'sem terras para cultivar , surgiram nessas (MISC)', 'áreas (MISC)', 'muitos conflitos (MISC)', 'fund (MISC)', 'iários , (MISC)', 'o (MISC)', 'que originou (MISC)', 'projetos (MISC)', 'de reforma (MISC)', 'ag (MISC)', 'rária que visam à distribuição mais igualitária da terra , em países como México , Bolívia , Chile , Peru e Cuba . (MISC)']
+
+=== Sentença 31 ===
+Texto: Como exemplos característicos desse sistema , podemos citar o café , responsável por uma parte substancial das rendas de exportação da Colômbia , Costa Rica , Guatemala e El Salvador , e a banana , com igual importância para o Panamá e Honduras , além de outros produtos de menor expressão .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Colômbia (LOC)', 'Costa Rica (LOC)', 'Guatemala (LOC)', 'El Salvador (LOC)', 'Panamá (LOC)', 'Honduras (LOC)']
+Pred: ['Como exemplos característico (MISC)', 's (MISC)', 'desse sistema (MISC)', ', podemos (MISC)', 'citar o café (MISC)', ', responsável por (MISC)', 'uma parte (MISC)', 'substancial das rendas de exportação (MISC)', 'da (MISC)', 'Colômbia , Costa Rica , Gua (MISC)', 'tema (MISC)', 'la e El Salvador , e (MISC)', 'a ban (MISC)', 'ana , (MISC)', 'com (MISC)', 'igual importância para o Panamá e Honduras , (MISC)', 'além (MISC)', 'de outros produtos de menor expressão . (MISC)']
+
+=== Sentença 32 ===
+Texto: Brasil , Argentina e México são os países que possuem a maior quantidade de cabeças de gado .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Brasil (LOC)', 'Argentina (LOC)', 'México (LOC)']
+Pred: ['Brasil , Argentina e México são os países que possuem (MISC)', 'a (MISC)', 'maior (MISC)', 'quantidade (MISC)', 'de cabeças de gado . (MISC)']
+
+=== Sentença 33 ===
+Texto: Nessa época , beneficiando-se das abundantes matérias-primas locais , dos baixos salários pagos à mão-de-obra e de uma certa especialização trazida pelos imigrantes , países como Brasil , México e Argentina , além de Venezuela , Chile , Colômbia e Peru , puderam implantar expressivos parques industriais .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Brasil (LOC)', 'México (LOC)', 'Argentina (LOC)', 'Venezuela (LOC)', 'Chile (LOC)', 'Colômbia (LOC)', 'Peru (LOC)']
+Pred: ['Nessa época (MISC)', ', beneficiando-se das abundantes (MISC)', 'matérias (MISC)', '-primas locais , dos baixos salários pagos à (MISC)', 'mão (MISC)', '-de-obra e de (MISC)', 'uma certa (MISC)', 'especialização (MISC)', 'traz (MISC)', 'ida pelos (MISC)', 'imigrantes (MISC)', ', países como Brasil , México e Argentina , além de Venezuela , Chile , Colômbia e Peru , puderam implantar expressivos parques industriais . (MISC)']
+
+=== Sentença 34 ===
+Texto: Nos demais países latino-americanos , principalmente da América Central , predominam indústrias de beneficiamento de produtos primários para exportação .
+
+Gold Entities vs. Pred Entities:
+Gold: ['América Central (LOC)']
+Pred: ['Nos demais países latino-americanos , (MISC)', 'principalmente (MISC)', 'da (MISC)', 'América (MISC)', 'Central , predominam indústrias de (MISC)', 'beneficia (MISC)', 'mento de (MISC)', 'produtos primário (MISC)', 's para (MISC)', 'exportação (MISC)', '. (MISC)']
+
+=== Sentença 35 ===
+Texto: É maior nas nações latinas mais industrializadas -- Brasil , Argentina , Colômbia e México -- , reduzindo-se nos demais países .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Brasil (LOC)', 'Argentina (LOC)', 'Colômbia (LOC)', 'México (LOC)']
+Pred: ['É (MISC)', 'maior (MISC)', 'nas nações latinas mais (MISC)', 'industrial (MISC)', 'izadas -- Brasil , Argentina , (MISC)', 'Colômbia e (MISC)', 'México -- , (MISC)', 'reduzindo (MISC)', '-se nos demais países . (MISC)']
+
+=== Sentença 36 ===
+Texto: Na região mais densamente povoada da América do Sul e servida pela bacia dos rios Paraná , Paraguai e Uruguai ( bacia Platina ) vem sendo desenvolvida uma hidrovia que fará a interligação fluvial entre os quatro países do sudeste do continente .
+
+Gold Entities vs. Pred Entities:
+Gold: ['América do Sul (LOC)', 'Paraná (LOC)', 'Paraguai (LOC)', 'Uruguai (LOC)', 'bacia Platina (LOC)']
+Pred: ['Na (MISC)', 'região mais densamente povoada da (MISC)', 'América (MISC)', 'do Sul e servida pela bacia dos (MISC)', 'rios (MISC)', 'Paraná , Paraguai e Uruguai (MISC)', '( (MISC)', 'bacia (MISC)', 'Pla (MISC)', 'tina ) vem sendo (MISC)', 'desenvolvida uma hidrovia (MISC)', 'que fará (MISC)', 'a (MISC)', 'interligação (MISC)', 'fluvial (MISC)', 'entre os quatro países do sudeste (MISC)', 'do (MISC)', 'continente . (MISC)']
+
+=== Sentença 37 ===
+Texto: Tinha este género já alguns percursores como Raúl Brandão e sofria a influência das filosofias de Nietzsche ou Schopenhauer .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Raúl Brandão (PER)', 'Nietzsche (PER)', 'Schopenhauer (PER)']
+Pred: ['Tinha este género (MISC)', 'já alguns (MISC)', 'percursores como Raúl Brandão e sofria (MISC)', 'a (MISC)', 'influência das filosofias de Nietzsche ou Schopenhauer . (MISC)']
+
+=== Sentença 38 ===
+Texto: É a vertente da obra do autor que menos interesse suscitará senão pelo quadro da miséria em Portugal que descreve com rigor jornalístico .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Portugal (LOC)']
+Pred: ['É (MISC)', 'a (MISC)', 'vertente da obra do autor que menos interesse suscitará senão pelo quadro da (MISC)', 'mis (MISC)', 'éria em Portugal que descreve (MISC)', 'com rigor jornalístico (MISC)', '. (MISC)']
+
+=== Sentença 39 ===
+Texto: Nos últimos anos da sua vida , Albino Forjaz de Sampaio dedicou-se essencialmente aos estudos de biblioteconomia , à história do livro e da tipografia .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Albino Forjaz de Sampaio (PER)']
+Pred: ['Nos últimos anos da sua vida , (MISC)', 'Albino Forja (MISC)', 'z de Sampaio dedicou-se essencialmente aos estudos de bibliote (MISC)', 'conomia , (MISC)', 'à (MISC)', 'história (MISC)', 'do livro e da tipo (MISC)', 'grafia (MISC)', '. (MISC)']
+
+=== Sentença 40 ===
+Texto: Morreu em Lisboa , a sua cidade de eleição , a escrever um artigo para um jornal .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Lisboa (LOC)']
+Pred: ['Morreu em Lisboa , (MISC)', 'a (MISC)', 'sua (MISC)', 'cidade (MISC)', 'de eleição , a escrever (MISC)', 'um (MISC)', 'artigo (MISC)', 'para um jornal (MISC)', '. (MISC)']
+
+=== Sentença 41 ===
+Texto: A Espanha já o usava desde meados do século precedente .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Espanha (LOC)']
+Pred: ['A Espanha já (MISC)', 'o usava (MISC)', 'desde meados do século (MISC)', 'preced (MISC)', 'ente . (MISC)']
+
+=== Sentença 42 ===
+Texto: Contudo , é o padrão internacional , sendo reconhecido por instituições internacionais como a Organização das Nações Unidas ou a União Postal Universal .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Organização das Nações Unidas (ORG)', 'União Postal Universal (ORG)']
+Pred: ['Contudo , é o padrão internacional (MISC)', ', (MISC)', 'sendo reconhecido por instituições internacionais como (MISC)', 'a (MISC)', 'Organização das Nações Unidas ou (MISC)', 'a (MISC)', 'União Postal Universal . (MISC)']
+
+=== Sentença 43 ===
+Texto: Segundo a Bíblia , Jesus de Nazaré teria sido ungido após o seu baptismo , " cerca de trinta anos " depois do seu nascimento .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Bíblia (MISC)', 'Jesus de Nazaré (PER)']
+Pred: ['Segundo (MISC)', 'a (MISC)', 'Bíblia , (MISC)', 'Jesus (MISC)', 'de Nazaré (MISC)', 'teria (MISC)', 'sido (MISC)', 'ungi (MISC)', 'do após (MISC)', 'o (MISC)', 'seu (MISC)', 'bapt (MISC)', 'ismo , (MISC)', '" (MISC)', 'cerca de trinta anos " depois (MISC)', 'do (MISC)', 'seu (MISC)', 'nascimento (MISC)', '. (MISC)']
+
+=== Sentença 44 ===
+Texto: Os seus sucessores seguiram tal prática até que a memória da República Romana se foi esbatendo , quando começaram a usar explicitamente o seu ano de reinado .
+
+Gold Entities vs. Pred Entities:
+Gold: ['República Romana (LOC)']
+Pred: ['Os seus sucessores seguiram tal (MISC)', 'prática até (MISC)', 'que (MISC)', 'a memória da (MISC)', 'República Romana se foi (MISC)', 'es (MISC)', 'batendo (MISC)', ', (MISC)', 'quando (MISC)', 'começaram (MISC)', 'a (MISC)', 'usar (MISC)', 'explicitamente (MISC)', 'o seu ano (MISC)', 'de reinado . (MISC)']
+
+=== Sentença 45 ===
+Texto: Também a pacificação de uma região por Augusto serviu como ponto de partida para um calendário .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Augusto (PER)']
+Pred: ['Também (MISC)', 'a (MISC)', 'pacificação de (MISC)', 'uma (MISC)', 'região por Augusto serviu como ponto de (MISC)', 'partida para um (MISC)', 'calendário . (MISC)']
+
+=== Sentença 46 ===
+Texto: -- ano este que é determinado pelas informações dadas por Flávio Josefo quanto aos eclipses lunares ocorridos na Páscoa e aos acontecimentos que acompanharam a sua morte , tal como foi calculado por Kepler .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Flávio Josefo (PER)', 'Páscoa (MISC)', 'Kepler (PER)']
+Pred: ['-- (MISC)', 'ano (MISC)', 'este que é determinado pelas (MISC)', 'informações (MISC)', 'dadas por (MISC)', 'Flávio (MISC)', 'Josefo quanto aos (MISC)', 'eclipse (MISC)', 's (MISC)', 'lunar (MISC)', 'es ocorridos (MISC)', 'na (MISC)', 'Páscoa e aos (MISC)', 'acontecimentos (MISC)', 'que acompanhar (MISC)', 'am a (MISC)', 'sua morte , tal como foi calculado por Kepler . (MISC)']
+
+=== Sentença 47 ===
+Texto: ) , estabelecendo o padrão da não existência de ano zero -- ainda que tenha usado o zero no seu computus , ou determinação da Páscoa cristã .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Páscoa (MISC)']
+Pred: [') , estabelecendo (MISC)', 'o (MISC)', 'padrão da não existência de (MISC)', 'ano (MISC)', 'zero -- ainda que (MISC)', 'tenha (MISC)', 'usado (MISC)', 'o (MISC)', 'zero no seu computus , ou determinação (MISC)', 'da Páscoa cristã . (MISC)']
+
+=== Sentença 48 ===
+Texto: A adoção do novo sistema de datação por Carlos Magno e pelos seus sucessores está na origem do sucesso do mesmo nos séculos seguintes , até à época atual .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Carlos Magno (PER)']
+Pred: ['A adoção do novo sistema (MISC)', 'de (MISC)', 'data (MISC)', 'ção por (MISC)', 'Carlos (MISC)', 'Magno e pelos seus sucessores está na (MISC)', 'origem do (MISC)', 'sucesso do mesmo nos (MISC)', 'séculos (MISC)', 'seguintes , (MISC)', 'até (MISC)', 'à (MISC)', 'época atual (MISC)', '. (MISC)']
+
+=== Sentença 49 ===
+Texto: Aquiles tem ainda a característica de ser o mais belo dos heróis reunidos contra Tróia , assim como o melhor entre eles .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Aquiles (PER)', 'Tróia (LOC)']
+Pred: ['Aquiles tem ainda (MISC)', 'a característica (MISC)', 'de ser (MISC)', 'o (MISC)', 'mais belo dos heróis reunidos contra Tróia , (MISC)', 'assim (MISC)', 'como (MISC)', 'o (MISC)', 'melhor entre eles . (MISC)']
+
+=== Sentença 50 ===
+Texto: afirmavam que Aquiles era invulnerável em todo o seu corpo , exceto em seu calcanhar ; ainda segundo estas versões de seu mito , sua morte teria sido causada por uma flecha envenenada que o teria atingido exatamente nesta parte de seu corpo .
+
+Gold Entities vs. Pred Entities:
+Gold: ['Aquiles (PER)']
+Pred: ['afirmava (MISC)', 'm (MISC)', 'que (MISC)', 'Aquiles era (MISC)', 'invulner (MISC)', 'ável (MISC)', 'em (MISC)', 'todo o seu corpo (MISC)', ', (MISC)', 'exceto em seu calcanha (MISC)', 'r (MISC)', '; ainda segundo estas versões de seu mito , sua morte (MISC)', 'teria (MISC)', 'sido causada por uma flecha envenenada que o teria atingido exatamente nesta parte de seu corpo . (MISC)']
