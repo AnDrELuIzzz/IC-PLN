@@ -1,0 +1,332 @@
+=== ANÁLISE DE ERROS - ESTADO DA ARTE ===
+
+📊 ESTATÍSTICAS GERAIS:
+• Total de erros POS: 4745
+• Total de erros Lematização: 15533
+• Total de erros Dependências: 24257
+
+🔍 PADRÕES DE ERRO POS TAGGING:
+• PROPN → NOUN: 1093 ocorrências
+• CCONJ → NOUN: 640 ocorrências
+• Verbos infinitivos: 519 ocorrências
+• DET → NOUN: 425 ocorrências
+• SCONJ → ADP: 338 ocorrências
+• ADP → DET: 220 ocorrências
+• VERB → NOUN: 209 ocorrências
+• DET → ADP: 206 ocorrências
+• PUNCT → NOUN: 195 ocorrências
+• ADJ → NOUN: 129 ocorrências
+
+🔍 PADRÕES DE ERRO LEMATIZAÇÃO:
+• Problemas com maiúsculas: 1864 ocorrências
+• Erros de plural: 1193 ocorrências
+• Verbos pretérito: 82 ocorrências
+• Verbos gerúndio: 42 ocorrências
+
+📝 DETALHES DOS ERROS (Primeiros 20 de cada tipo):
+
+ERROS DE POS TAGGING (4745):
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: 'de' (Posição: 8)
+Gold: SCONJ → Predito: ADP
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: 'Seleção' (Posição: 1)
+Gold: NOUN → Predito: PROPN
+
+Sentença ID: CF756-4
+Texto: A melhor equipe é que deve jogar.
+Token: 'deve' (Posição: 6)
+Gold: VERB → Predito: NOUN
+
+Sentença ID: CF757-2
+Texto: ... casos positivos de dengue em Monte Aprazível (38 km de Rio Preto-SP) foram divulgados ontem pelo Ersa (Escritório Regional de Saúde) de Rio Preto.
+Token: 'Monte' (Posição: 7)
+Gold: PROPN → Predito: ADJ
+
+Sentença ID: CF757-2
+Texto: ... casos positivos de dengue em Monte Aprazível (38 km de Rio Preto-SP) foram divulgados ontem pelo Ersa (Escritório Regional de Saúde) de Rio Preto.
+Token: 'Aprazível' (Posição: 8)
+Gold: PROPN → Predito: NOUN
+
+Sentença ID: CF757-2
+Texto: ... casos positivos de dengue em Monte Aprazível (38 km de Rio Preto-SP) foram divulgados ontem pelo Ersa (Escritório Regional de Saúde) de Rio Preto.
+Token: 'Rio' (Posição: 13)
+Gold: PROPN → Predito: NOUN
+
+Sentença ID: CF757-2
+Texto: ... casos positivos de dengue em Monte Aprazível (38 km de Rio Preto-SP) foram divulgados ontem pelo Ersa (Escritório Regional de Saúde) de Rio Preto.
+Token: 'Preto-SP' (Posição: 14)
+Gold: PROPN → Predito: NOUN
+
+Sentença ID: CF757-2
+Texto: ... casos positivos de dengue em Monte Aprazível (38 km de Rio Preto-SP) foram divulgados ontem pelo Ersa (Escritório Regional de Saúde) de Rio Preto.
+Token: 'Escritório' (Posição: 23)
+Gold: PROPN → Predito: NOUN
+
+Sentença ID: CF757-2
+Texto: ... casos positivos de dengue em Monte Aprazível (38 km de Rio Preto-SP) foram divulgados ontem pelo Ersa (Escritório Regional de Saúde) de Rio Preto.
+Token: 'Regional' (Posição: 24)
+Gold: PROPN → Predito: NOUN
+
+Sentença ID: CF757-2
+Texto: ... casos positivos de dengue em Monte Aprazível (38 km de Rio Preto-SP) foram divulgados ontem pelo Ersa (Escritório Regional de Saúde) de Rio Preto.
+Token: 'Rio' (Posição: 29)
+Gold: PROPN → Predito: NOUN
+
+Sentença ID: CF757-2
+Texto: ... casos positivos de dengue em Monte Aprazível (38 km de Rio Preto-SP) foram divulgados ontem pelo Ersa (Escritório Regional de Saúde) de Rio Preto.
+Token: 'Preto' (Posição: 30)
+Gold: PROPN → Predito: NOUN
+
+Sentença ID: CF757-4
+Texto: A cidade de Monte Aprazível tem 68 casos confirmados.
+Token: 'Monte' (Posição: 4)
+Gold: PROPN → Predito: ADJ
+
+Sentença ID: CF757-4
+Texto: A cidade de Monte Aprazível tem 68 casos confirmados.
+Token: 'Aprazível' (Posição: 5)
+Gold: PROPN → Predito: NOUN
+
+Sentença ID: CF757-4
+Texto: A cidade de Monte Aprazível tem 68 casos confirmados.
+Token: 'confirmados' (Posição: 9)
+Gold: VERB → Predito: NOUN
+
+Sentença ID: CF757-5
+Texto: Rio Preto tem três casos positivos.
+Token: 'Rio' (Posição: 1)
+Gold: PROPN → Predito: NOUN
+
+Sentença ID: CF757-5
+Texto: Rio Preto tem três casos positivos.
+Token: 'Preto' (Posição: 2)
+Gold: PROPN → Predito: NOUN
+
+Sentença ID: CF757-6
+Texto: Policiais Federais do MS entram em greve
+Token: 'Federais' (Posição: 2)
+Gold: ADJ → Predito: NOUN
+
+Sentença ID: CF757-7
+Texto: Os policiais federais de Mato Grosso do Sul entraram em greve ontem, em adesão ao movimento iniciado no Distrito Federal.
+Token: 'Mato' (Posição: 5)
+Gold: PROPN → Predito: NOUN
+
+Sentença ID: CF757-7
+Texto: Os policiais federais de Mato Grosso do Sul entraram em greve ontem, em adesão ao movimento iniciado no Distrito Federal.
+Token: 'Grosso' (Posição: 6)
+Gold: PROPN → Predito: NOUN
+
+Sentença ID: CF757-7
+Texto: Os policiais federais de Mato Grosso do Sul entraram em greve ontem, em adesão ao movimento iniciado no Distrito Federal.
+Token: 'a' (Posição: 17)
+Gold: ADP → Predito: DET
+
+
+ERROS DE LEMATIZAÇÃO (15533):
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: 'Folha' (Posição: 1)
+Gold: 'Folha' → Predito: 'folhar'
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: 'a' (Posição: 6)
+Gold: 'o' → Predito: 'ar'
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: 'notícia' (Posição: 7)
+Gold: 'notícia' → Predito: 'notíciar'
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: 'de' (Posição: 8)
+Gold: 'de' → Predito: 'der'
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: 'que' (Posição: 9)
+Gold: 'que' → Predito: 'quer'
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: 'seria' (Posição: 10)
+Gold: 'ser' → Predito: 'seriar'
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: 'substituído' (Posição: 11)
+Gold: 'substituir' → Predito: 'substituído'
+
+Sentença ID: CF756-2
+Texto: Giovane -- Normalmente.
+Token: 'Giovane' (Posição: 1)
+Gold: 'Giovane' → Predito: 'giovaner'
+
+Sentença ID: CF756-2
+Texto: Giovane -- Normalmente.
+Token: 'Normalmente' (Posição: 3)
+Gold: 'normalmente' → Predito: 'normalmenter'
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: 'Seleção' (Posição: 1)
+Gold: 'seleção' → Predito: 'seleç'
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: 'é' (Posição: 2)
+Gold: 'ser' → Predito: 'é'
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: 'quem' (Posição: 6)
+Gold: 'quem' → Predito: 'quer'
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: 'está' (Posição: 7)
+Gold: 'estar' → Predito: 'está'
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: 'não' (Posição: 10)
+Gold: 'não' → Predito: 'n'
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: 'esse' (Posição: 12)
+Gold: 'esse' → Predito: 'esser'
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: 'de' (Posição: 14)
+Gold: 'de' → Predito: 'der'
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: 'nome' (Posição: 15)
+Gold: 'nome' → Predito: 'nomer'
+
+Sentença ID: CF756-4
+Texto: A melhor equipe é que deve jogar.
+Token: 'A' (Posição: 1)
+Gold: 'o' → Predito: 'ar'
+
+Sentença ID: CF756-4
+Texto: A melhor equipe é que deve jogar.
+Token: 'equipe' (Posição: 3)
+Gold: 'equipe' → Predito: 'equiper'
+
+Sentença ID: CF756-4
+Texto: A melhor equipe é que deve jogar.
+Token: 'é' (Posição: 4)
+Gold: 'ser' → Predito: 'é'
+
+
+ERROS DE DEPENDÊNCIAS (24257):
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: '--' (Posição: 2)
+Gold: (1, 'punct') → Predito: (1, 'dep')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: 'Como' (Posição: 3)
+Gold: (5, 'advmod') → Predito: (2, 'dep')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: 'você' (Posição: 4)
+Gold: (5, 'nsubj') → Predito: (3, 'dep')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: 'recebeu' (Posição: 5)
+Gold: (1, 'parataxis') → Predito: (4, 'dep')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: 'notícia' (Posição: 7)
+Gold: (5, 'obj') → Predito: (6, 'dep')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: 'de' (Posição: 8)
+Gold: (11, 'mark') → Predito: (7, 'nmod')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: 'que' (Posição: 9)
+Gold: (11, 'mark') → Predito: (8, 'dep')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: 'seria' (Posição: 10)
+Gold: (11, 'aux:pass') → Predito: (9, 'dep')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: 'substituído' (Posição: 11)
+Gold: (7, 'acl') → Predito: (10, 'dep')
+
+Sentença ID: CF756-1
+Texto: Folha -- Como você recebeu a notícia de que seria substituído?
+Token: '?' (Posição: 12)
+Gold: (1, 'punct') → Predito: (11, 'dep')
+
+Sentença ID: CF756-2
+Texto: Giovane -- Normalmente.
+Token: '--' (Posição: 2)
+Gold: (1, 'punct') → Predito: (1, 'dep')
+
+Sentença ID: CF756-2
+Texto: Giovane -- Normalmente.
+Token: 'Normalmente' (Posição: 3)
+Gold: (1, 'parataxis') → Predito: (2, 'amod')
+
+Sentença ID: CF756-2
+Texto: Giovane -- Normalmente.
+Token: '.' (Posição: 4)
+Gold: (1, 'punct') → Predito: (3, 'dep')
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: 'Seleção' (Posição: 1)
+Gold: (3, 'nsubj') → Predito: (0, 'root')
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: 'é' (Posição: 2)
+Gold: (3, 'cop') → Predito: (1, 'dep')
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: 'isso' (Posição: 3)
+Gold: (0, 'root') → Predito: (2, 'nsubj')
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: ',' (Posição: 4)
+Gold: (5, 'punct') → Predito: (2, 'nsubj')
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: 'joga' (Posição: 5)
+Gold: (3, 'acl:relcl') → Predito: (2, 'nsubj')
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: 'quem' (Posição: 6)
+Gold: (8, 'nsubj') → Predito: (2, 'nsubj')
+
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: 'está' (Posição: 7)
+Gold: (8, 'cop') → Predito: (2, 'nsubj')
+
