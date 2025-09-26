@@ -26,20 +26,15 @@ def parse_conllu(file_path):
                 if not in_sentence:
                     in_sentence = True
                     current_sent['tokens'] = []
-                    current_sent['gold_pos'] = []
+                    current_sent['gold_pos'] = []  # Mudança: usa POS em vez de separar UPOS/XPOS
                     current_sent['gold_heads'] = []
                     current_sent['gold_deprels'] = []
                     current_sent['gold_lemmas'] = []
-                    current_sent['gold_upos'] = []
-                    current_sent['gold_xpos'] = []
-                    current_sent['gold_feats'] = []
                 
                 parts = line.split('\t')
                 current_sent['tokens'].append(parts[1])
                 current_sent['gold_lemmas'].append(parts[2])
-                current_sent['gold_upos'].append(parts[3])
-                current_sent['gold_xpos'].append(parts[4])
-                current_sent['gold_feats'].append(parts[5])
+                current_sent['gold_pos'].append(parts[3])  # UPOS como POS padrão
                 current_sent['gold_heads'].append(int(parts[6]))
                 current_sent['gold_deprels'].append(parts[7])
                 
@@ -89,9 +84,7 @@ def parse_udpipe_output(conllu_output):
     lines = conllu_output.strip().split('\n')
     tokens = []
     lemmas = []
-    upos_tags = []
-    xpos_tags = []
-    feats = []
+    pos_tags = []  # Mudança: apenas POS (UPOS)
     heads = []
     deprels = []
     spans = []
@@ -102,9 +95,7 @@ def parse_udpipe_output(conllu_output):
             if '-' not in parts[0]:  # Ignora tokens multi-word
                 tokens.append(parts[1])
                 lemmas.append(parts[2])
-                upos_tags.append(parts[3])
-                xpos_tags.append(parts[4])
-                feats.append(parts[5])
+                pos_tags.append(parts[3])  # UPOS como POS padrão
                 heads.append(int(parts[6]))
                 deprels.append(parts[7])
                 # Para spans, assumimos posições sequenciais (UDPipe não fornece spans exatos)
@@ -115,9 +106,7 @@ def parse_udpipe_output(conllu_output):
     return {
         'tokens': tokens,
         'lemmas': lemmas,
-        'upos': upos_tags,
-        'xpos': xpos_tags,
-        'feats': feats,
+        'pos': pos_tags,  # Mudança: chave simplificada
         'heads': heads,
         'deprels': deprels,
         'spans': spans
@@ -145,15 +134,11 @@ def evaluate_udpipe(sentences, model_path):
             'gold_spans': sent['gold_spans'],
             'pred_tokens': pred_data['tokens'],
             'pred_spans': pred_data['spans'],
-            'gold_upos': sent['gold_upos'],
-            'gold_xpos': sent['gold_xpos'],
-            'gold_feats': sent['gold_feats'],
+            'gold_pos': sent['gold_pos'],  # Mudança: POS unificado
             'gold_heads': sent['gold_heads'],
             'gold_deprels': sent['gold_deprels'],
             'gold_lemmas': sent['gold_lemmas'],
-            'pred_upos': pred_data['upos'],
-            'pred_xpos': pred_data['xpos'],
-            'pred_feats': pred_data['feats'],
+            'pred_pos': pred_data['pos'],  # Mudança: POS unificado
             'pred_heads': pred_data['heads'],
             'pred_deprels': pred_data['deprels'],
             'pred_lemmas': pred_data['lemmas']
@@ -161,15 +146,14 @@ def evaluate_udpipe(sentences, model_path):
     
     return results
 
-# Função que calcula métricas de avaliação
+# Função que calcula métricas de avaliação - PADRONIZADA COM SPACY
 def calculate_metrics(results):
     """
     Calcula métricas de comparação entre os dados gold e os preditos pelo UDPipe.
-    Inclui UPOS, XPOS, lematização, UAS e LAS.
+    PADRONIZADO: Usa as mesmas métricas do spaCy (POS, Lemma, UAS, LAS, Token F1).
     """
     total_tokens = 0
-    upos_correct = 0
-    xpos_correct = 0
+    pos_correct = 0  # Mudança: nome padronizado
     lemma_correct = 0
     uas_correct = 0
     las_correct = 0
@@ -180,8 +164,7 @@ def calculate_metrics(results):
         total_tokens += n
         
         # Calcular acurácia para cada tarefa
-        upos_correct += sum(1 for g, p in zip(sent['gold_upos'], sent['pred_upos']) if g == p)
-        xpos_correct += sum(1 for g, p in zip(sent['gold_xpos'], sent['pred_xpos']) if g == p)
+        pos_correct += sum(1 for g, p in zip(sent['gold_pos'], sent['pred_pos']) if g == p)
         lemma_correct += sum(1 for g, p in zip(sent['gold_lemmas'], sent['pred_lemmas']) if g == p)
         
         # Calcular UAS e LAS
@@ -208,9 +191,9 @@ def calculate_metrics(results):
     recall = tp_token / (tp_token + fn_token) if (tp_token + fn_token) > 0 else 0
     f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
     
+    # RETORNO PADRONIZADO - MESMAS CHAVES DO SPACY
     return {
-        'upos_accuracy': upos_correct / total_tokens,
-        'xpos_accuracy': xpos_correct / total_tokens,
+        'pos_accuracy': pos_correct / total_tokens,  # Mudança: nome padronizado
         'lemma_accuracy': lemma_correct / total_tokens,
         'uas': uas_correct / total_tokens,
         'las': las_correct / total_tokens,
@@ -219,14 +202,15 @@ def calculate_metrics(results):
         'token_f1': f1
     }
 
-# Função que salva os resultados e métricas em um arquivo de saída
+# Função que salva os resultados e métricas em um arquivo de saída - PADRONIZADA
 def save_results_to_file(results, metrics, output_file="resultados_udpipe.txt", max_sentences=None):
     """
     Registra as métricas gerais e detalhes de cada sentença para análise posterior.
+    PADRONIZADO: Usa a mesma formatação e ordem de métricas do spaCy.
     """
+    # MÉTRICAS PADRONIZADAS - MESMA ORDEM DO SPACY
     metric_rows = [
-        ["Acurácia de UPOS", f"{metrics['upos_accuracy']:.2%}"],
-        ["Acurácia de XPOS", f"{metrics['xpos_accuracy']:.2%}"],
+        ["Acurácia de POS", f"{metrics['pos_accuracy']:.2%}"],  # Mudança: nome padronizado
         ["Acurácia de Lemmas", f"{metrics['lemma_accuracy']:.2%}"],
         ["UAS", f"{metrics['uas']:.2%}"],
         ["LAS", f"{metrics['las']:.2%}"],
@@ -245,6 +229,13 @@ def save_results_to_file(results, metrics, output_file="resultados_udpipe.txt", 
             max_sentences = len(results)
             
         for i, sent in enumerate(results[:max_sentences]):
+            # Verificar se os comprimentos coincidem
+            if len(sent['gold_tokens']) != len(sent['pred_tokens']):
+                f.write(f"\n=== Sentença {i+1} ({sent['sent_id']}) ===\n")
+                f.write("Texto: " + sent['text'] + "\n")
+                f.write("Aviso: Comprimentos de tokens gold e previstos não coincidem. Pulando detalhes.\n\n")
+                continue
+            
             f.write(f"\n=== Sentença {i+1} ({sent['sent_id']}) ===\n")
             f.write("Texto: " + sent['text'] + "\n\n")
             
@@ -255,19 +246,16 @@ def save_results_to_file(results, metrics, output_file="resultados_udpipe.txt", 
             ]
             f.write(tabulate(tokens_data, tablefmt="plain") + "\n\n")
             
-            # Tabela detalhada de comparação
-            comp_headers = ["Token", "Gold UPOS", "UDPipe UPOS", "Gold XPOS", "UDPipe XPOS",
-                           "Gold HEAD", "UDPipe HEAD", "Gold DEPREL", "UDPipe DEPREL", 
-                           "Gold Lemma", "UDPipe Lemma"]
+            # Tabela detalhada de comparação - PADRONIZADA COM SPACY
+            comp_headers = ["Token", "Gold POS", "UDPipe POS", "Gold HEAD", "UDPipe HEAD",
+                           "Gold DEPREL", "UDPipe DEPREL", "Gold Lemma", "UDPipe Lemma"]
             comp_rows = []
             
             for j in range(len(sent['gold_tokens'])):
                 comp_rows.append([
                     sent['gold_tokens'][j],
-                    sent['gold_upos'][j],
-                    sent['pred_upos'][j],
-                    sent['gold_xpos'][j],
-                    sent['pred_xpos'][j],
+                    sent['gold_pos'][j],
+                    sent['pred_pos'][j],
                     sent['gold_heads'][j],
                     sent['pred_heads'][j],
                     sent['gold_deprels'][j],
@@ -279,14 +267,14 @@ def save_results_to_file(results, metrics, output_file="resultados_udpipe.txt", 
             table = tabulate(comp_rows, headers=comp_headers, tablefmt="grid")
             f.write(table + "\n")
 
-# Função para análise de erros
+# Função para análise de erros - PADRONIZADA
 def analyze_errors(results, output_file="analise_erros_udpipe.txt"):
     """
     Gera um relatório detalhado dos erros cometidos pelo UDPipe.
+    PADRONIZADO: Usa a mesma estrutura de análise de erros do spaCy.
     """
     error_analysis = {
-        'upos_errors': [],
-        'xpos_errors': [],
+        'pos_errors': [],  # Mudança: nome padronizado
         'lemma_errors': [],
         'dependency_errors': []
     }
@@ -295,25 +283,18 @@ def analyze_errors(results, output_file="analise_erros_udpipe.txt"):
         sent_id = sent.get('sent_id', 'N/A')
         text = sent['text']
         
-        for idx, (token, g_upos, p_upos, g_xpos, p_xpos, g_lemma, p_lemma, 
+        for idx, (token, g_pos, p_pos, g_lemma, p_lemma, 
                  g_head, p_head, g_deprel, p_deprel) in enumerate(zip(
-            sent['gold_tokens'], sent['gold_upos'], sent['pred_upos'],
-            sent['gold_xpos'], sent['pred_xpos'],
+            sent['gold_tokens'], sent['gold_pos'], sent['pred_pos'],
             sent['gold_lemmas'], sent['pred_lemmas'],
             sent['gold_heads'], sent['pred_heads'],
             sent['gold_deprels'], sent['pred_deprels']
         )):
             
-            if g_upos != p_upos:
-                error_analysis['upos_errors'].append({
+            if g_pos != p_pos:
+                error_analysis['pos_errors'].append({
                     'sent_id': sent_id, 'text': text, 'token': token,
-                    'position': idx + 1, 'gold': g_upos, 'predicted': p_upos
-                })
-            
-            if g_xpos != p_xpos:
-                error_analysis['xpos_errors'].append({
-                    'sent_id': sent_id, 'text': text, 'token': token,
-                    'position': idx + 1, 'gold': g_xpos, 'predicted': p_xpos
+                    'position': idx + 1, 'gold': g_pos, 'predicted': p_pos
                 })
             
             if g_lemma != p_lemma:
@@ -332,10 +313,17 @@ def analyze_errors(results, output_file="analise_erros_udpipe.txt"):
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("=== Análise de Erros - UDPipe ===\n\n")
 
-        for error_type, errors in error_analysis.items():
-            error_name = error_type.replace('_', ' ').title()
+        # FORMATO PADRONIZADO - MESMO DO SPACY
+        error_types = [
+            ('pos_errors', 'Erros de POS Tagging'),
+            ('lemma_errors', 'Erros de Lematização'),
+            ('dependency_errors', 'Erros de Dependências')
+        ]
+
+        for error_type, error_name in error_types:
+            errors = error_analysis[error_type]
             f.write(f"{error_name} ({len(errors)} erros):\n")
-            for error in errors[:50]:  # Limita a 50 erros por tipo para não ficar muito longo
+            for error in errors[:50]:  # Limita a 50 erros por tipo
                 f.write(f"Sentença ID: {error['sent_id']}\n")
                 f.write(f"Texto: {error['text']}\n")
                 f.write(f"Token: {error['token']} (Posição: {error['position']})\n")
@@ -379,10 +367,9 @@ if __name__ == "__main__":
     print("5. Gerando análise de erros...")
     analyze_errors(results, output_file=f"{txt_dir}/analise_erros_udpipe.txt")
     
-    # 6. Exibir métricas finais
+    # 6. Exibir métricas finais - PADRONIZADO COM SPACY
     print("\n=== MÉTRICAS FINAIS ===")
-    print(f"UPOS Accuracy: {metrics['upos_accuracy']:.2%}")
-    print(f"XPOS Accuracy: {metrics['xpos_accuracy']:.2%}")
+    print(f"POS Accuracy: {metrics['pos_accuracy']:.2%}")  # Mudança: nome padronizado
     print(f"Lemma Accuracy: {metrics['lemma_accuracy']:.2%}")
     print(f"UAS: {metrics['uas']:.2%}")
     print(f"LAS: {metrics['las']:.2%}")

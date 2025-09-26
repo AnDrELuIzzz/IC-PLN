@@ -1,0 +1,764 @@
+=== Análise de Erros - UDPipe ===
+
+Erros de POS Tagging (773 erros):
+Sentença ID: CF765-1
+Texto: Formada por técnicos da Fazenda e das Minas e Energia, a comissão tem prazo de 60 dias para conluir o trabalho.
+Token: Fazenda (Posição: 6)
+Gold: NOUN | Predito: PROPN
+
+Sentença ID: CF769-3
+Texto: Corresponde a duas vezes e meia o patrimonio liquido da instituição.
+Token: meia (Posição: 6)
+Gold: NOUN | Predito: NUM
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: lado (Posição: 2)
+Gold: NOUN | Predito: DET
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: de (Posição: 3)
+Gold: ADP | Predito: NOUN
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: o (Posição: 4)
+Gold: DET | Predito: ADP
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: ala (Posição: 5)
+Gold: NOUN | Predito: DET
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: Charles (Posição: 6)
+Gold: PROPN | Predito: NOUN
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: , (Posição: 8)
+Gold: PUNCT | Predito: PROPN
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: Shaq (Posição: 10)
+Gold: PROPN | Predito: PUNCT
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: » (Posição: 11)
+Gold: PUNCT | Predito: PROPN
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: é (Posição: 12)
+Gold: AUX | Predito: PUNCT
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: hoje (Posição: 13)
+Gold: ADV | Predito: AUX
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: um (Posição: 14)
+Gold: NUM | Predito: ADV
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: de (Posição: 15)
+Gold: ADP | Predito: NUM
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: os (Posição: 16)
+Gold: DET | Predito: ADP
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: maiores (Posição: 17)
+Gold: ADJ | Predito: DET
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: astros (Posição: 18)
+Gold: NOUN | Predito: ADJ
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: de (Posição: 19)
+Gold: ADP | Predito: NOUN
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: o (Posição: 20)
+Gold: DET | Predito: ADP
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: basquete (Posição: 21)
+Gold: NOUN | Predito: DET
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: mundial (Posição: 22)
+Gold: ADJ | Predito: NOUN
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: . (Posição: 23)
+Gold: PUNCT | Predito: ADJ
+
+Sentença ID: CF775-1
+Texto: Técnico não é enfermeiro
+Token: Técnico (Posição: 1)
+Gold: NOUN | Predito: PROPN
+
+Sentença ID: CF775-3
+Texto: Enfermeiro é uma designação válida apenas para quem concluiu o curso superior de enfermagem.
+Token: Enfermeiro (Posição: 1)
+Gold: NOUN | Predito: ADV
+
+Sentença ID: CF775-3
+Texto: Enfermeiro é uma designação válida apenas para quem concluiu o curso superior de enfermagem.
+Token: superior (Posição: 12)
+Gold: NOUN | Predito: ADJ
+
+Sentença ID: CF777-2
+Texto: Bola da vez
+Token: Bola (Posição: 1)
+Gold: NOUN | Predito: PROPN
+
+Sentença ID: CF777-4
+Texto: E que, portanto, nem pensa numa troca de Guilherme Palmeira.
+Token: nem (Posição: 6)
+Gold: ADV | Predito: CCONJ
+
+Sentença ID: CF778-1
+Texto: «Não tínhamos uma segurança exemplar, mas ela era suficiente para permitir o alvará de licença dos bombeiros», afirmou.
+Token: o (Posição: 14)
+Gold: DET | Predito: PRON
+
+Sentença ID: CF778-1
+Texto: «Não tínhamos uma segurança exemplar, mas ela era suficiente para permitir o alvará de licença dos bombeiros», afirmou.
+Token: alvará (Posição: 15)
+Gold: NOUN | Predito: VERB
+
+Sentença ID: CF778-2
+Texto: Segundo ele, o alvará foi queimado, com tudo o que se perdeu.
+Token: alvará (Posição: 5)
+Gold: NOUN | Predito: VERB
+
+Sentença ID: CF778-2
+Texto: Segundo ele, o alvará foi queimado, com tudo o que se perdeu.
+Token: com (Posição: 9)
+Gold: SCONJ | Predito: ADP
+
+Sentença ID: CF778-3
+Texto: Taranto não soube dizer se os parentes das vítimas poderão pedir alguma indenização.
+Token: Taranto (Posição: 1)
+Gold: PROPN | Predito: NOUN
+
+Sentença ID: CF780-1
+Texto: Os nativos ainda se utilizam de lanças primitivas para pescar nas rasas piscinas naturais repletas de polvos e peixes tropicais.
+Token: rasas (Posição: 13)
+Gold: ADJ | Predito: NOUN
+
+Sentença ID: CF780-2
+Texto: Mas há a pesca comercial de atum controlada por norte-americanos de origem portuguesa, chineses de Taiwan e sul-coreanos em embarcações de 1,2 tonelada que valem até US$ 13 milhões.
+Token: atum (Posição: 7)
+Gold: NOUN | Predito: DET
+
+Sentença ID: CF780-2
+Texto: Mas há a pesca comercial de atum controlada por norte-americanos de origem portuguesa, chineses de Taiwan e sul-coreanos em embarcações de 1,2 tonelada que valem até US$ 13 milhões.
+Token: controlada (Posição: 8)
+Gold: VERB | Predito: NOUN
+
+Sentença ID: CF780-2
+Texto: Mas há a pesca comercial de atum controlada por norte-americanos de origem portuguesa, chineses de Taiwan e sul-coreanos em embarcações de 1,2 tonelada que valem até US$ 13 milhões.
+Token: até (Posição: 27)
+Gold: ADV | Predito: ADP
+
+Sentença ID: CF781-1
+Texto: 'Astronautas' fazem autópsia nos EUA
+Token: ' (Posição: 1)
+Gold: PUNCT | Predito: NOUN
+
+Sentença ID: CF781-1
+Texto: 'Astronautas' fazem autópsia nos EUA
+Token: Astronautas (Posição: 2)
+Gold: NOUN | Predito: PUNCT
+
+Sentença ID: CF781-1
+Texto: 'Astronautas' fazem autópsia nos EUA
+Token: ' (Posição: 3)
+Gold: PUNCT | Predito: VERB
+
+Sentença ID: CF781-1
+Texto: 'Astronautas' fazem autópsia nos EUA
+Token: fazem (Posição: 4)
+Gold: VERB | Predito: NOUN
+
+Sentença ID: CF781-1
+Texto: 'Astronautas' fazem autópsia nos EUA
+Token: autópsia (Posição: 5)
+Gold: NOUN | Predito: ADP
+
+Sentença ID: CF781-1
+Texto: 'Astronautas' fazem autópsia nos EUA
+Token: em (Posição: 6)
+Gold: ADP | Predito: DET
+
+Sentença ID: CF781-1
+Texto: 'Astronautas' fazem autópsia nos EUA
+Token: os (Posição: 7)
+Gold: DET | Predito: PROPN
+
+Sentença ID: CF782-1
+Texto: Cristou representa os clubes alemães do Bayern Leverkusen e Shalk-04.
+Token: Cristou (Posição: 1)
+Gold: PROPN | Predito: VERB
+
+Sentença ID: CF783-1
+Texto: O caso nasceu de uma «vendetta», obra e desgraça de um certo Francesco Farina, dono do Modena, um time rebaixado à 3ª divisão.
+Token: certo (Posição: 15)
+Gold: ADJ | Predito: DET
+
+Sentença ID: CF783-8
+Texto: De todo modo, na Bota, à Justiça cabe a missão de investigar, antes de meramente julgar.
+Token: Bota (Posição: 7)
+Gold: NOUN | Predito: PROPN
+
+Sentença ID: CF783-8
+Texto: De todo modo, na Bota, à Justiça cabe a missão de investigar, antes de meramente julgar.
+Token: Justiça (Posição: 11)
+Gold: NOUN | Predito: PROPN
+
+Sentença ID: CF783-9
+Texto: Gloria Attanasio, magistrada da capital, meramente decidiu o que a sua função lhe exigia, e enviou 250 detetives às sedes dos tais 34 clubes para, lá, coletarem os livros contábeis e os recibos correspondentes ao versamento dos impostos.
+Token: para (Posição: 31)
+Gold: SCONJ | Predito: ADP
+
+Sentença ID: CF785-1
+Texto: Apesar da popularidade, Chico de Miguel perdeu as duas últimas eleições para a Prefeitura de Itabaiana, que passou a ser controlada por políticos locais ligados ao governador João Alves.
+Token: Prefeitura (Posição: 16)
+Gold: NOUN | Predito: PROPN
+
+Sentença ID: CF785-6
+Texto: Mas tudo que ganho reverto também em ajuda para o povo, que recebe remédios, feira e dinheiro quando está precisando.
+Token: reverto (Posição: 5)
+Gold: VERB | Predito: ADV
+
+
+==================================================
+
+Erros de Lematização (760 erros):
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: melhor (Posição: 8)
+Gold: melhor | Predito: bom
+
+Sentença ID: CF756-4
+Texto: A melhor equipe é que deve jogar.
+Token: melhor (Posição: 2)
+Gold: melhor | Predito: bom
+
+Sentença ID: CF757-6
+Texto: Policiais Federais do MS entram em greve
+Token: Federais (Posição: 2)
+Gold: federal | Predito: federais
+
+Sentença ID: CF759-3
+Texto: Se o valor da compra for baixo, é melhor pedir encomenda por correio normal.
+Token: melhor (Posição: 11)
+Gold: melhor | Predito: bom
+
+Sentença ID: CF759-5
+Texto: Se não quiser se aventurar pela importação direta, existem empresas, como a Brasoftware (tel. 011/253-1588) que importam programas sob encomenda.
+Token: tel. (Posição: 18)
+Gold: telefone | Predito: tel.
+
+Sentença ID: CF760-4
+Texto: De seg a sex das 11h às 19h e sáb das 10h às 13h.
+Token: seg (Posição: 2)
+Gold: segunda | Predito: seg
+
+Sentença ID: CF760-4
+Texto: De seg a sex das 11h às 19h e sáb das 10h às 13h.
+Token: sex (Posição: 4)
+Gold: sexta | Predito: sex
+
+Sentença ID: CF760-4
+Texto: De seg a sex das 11h às 19h e sáb das 10h às 13h.
+Token: sáb (Posição: 12)
+Gold: sábado | Predito: sáb
+
+Sentença ID: CF760-4
+Texto: De seg a sex das 11h às 19h e sáb das 10h às 13h.
+Token: 13h (Posição: 18)
+Gold: 13h | Predito: 13h.
+
+Sentença ID: CF764-4
+Texto: A sensação de insegurança e a debilidade do poder público eram sem dúvida características dos Estados Unidos do final do século 18, quando (segundo a versão mais aceita) a palavra teria sido inventada a partir da prática adotada por um juiz Lynch, de condenar e executar seus adversários sem o devido processo legal.
+Token: características (Posição: 15)
+Gold: característica | Predito: característico
+
+Sentença ID: CF764-4
+Texto: A sensação de insegurança e a debilidade do poder público eram sem dúvida características dos Estados Unidos do final do século 18, quando (segundo a versão mais aceita) a palavra teria sido inventada a partir da prática adotada por um juiz Lynch, de condenar e executar seus adversários sem o devido processo legal.
+Token: aceita (Posição: 34)
+Gold: aceitar | Predito: aceito
+
+Sentença ID: CF769-4
+Texto: Peso maior
+Token: maior (Posição: 2)
+Gold: maior | Predito: grande
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: Ao (Posição: 1)
+Gold: ao | Predito: a
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: lado (Posição: 2)
+Gold: lado | Predito: o
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: de (Posição: 3)
+Gold: de | Predito: lado
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: o (Posição: 4)
+Gold: o | Predito: de
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: ala (Posição: 5)
+Gold: alar | Predito: o
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: Charles (Posição: 6)
+Gold: Charles | Predito: alar
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: Barkley (Posição: 7)
+Gold: Barkley | Predito: Charles
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: , (Posição: 8)
+Gold: , | Predito: Barkley
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: « (Posição: 9)
+Gold: « | Predito: ,
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: Shaq (Posição: 10)
+Gold: Shaq | Predito: «
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: » (Posição: 11)
+Gold: » | Predito: Shaq
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: é (Posição: 12)
+Gold: ser | Predito: »
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: hoje (Posição: 13)
+Gold: hoje | Predito: ser
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: um (Posição: 14)
+Gold: um | Predito: hoje
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: de (Posição: 15)
+Gold: de | Predito: um
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: os (Posição: 16)
+Gold: o | Predito: de
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: maiores (Posição: 17)
+Gold: grande | Predito: o
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: astros (Posição: 18)
+Gold: astro | Predito: grande
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: de (Posição: 19)
+Gold: de | Predito: astro
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: o (Posição: 20)
+Gold: o | Predito: de
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: basquete (Posição: 21)
+Gold: basquete | Predito: o
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: mundial (Posição: 22)
+Gold: mundial | Predito: basquete
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: . (Posição: 23)
+Gold: . | Predito: mundial
+
+Sentença ID: CF775-3
+Texto: Enfermeiro é uma designação válida apenas para quem concluiu o curso superior de enfermagem.
+Token: Enfermeiro (Posição: 1)
+Gold: enfermeiro | Predito: Enfermeiro
+
+Sentença ID: CF776-2
+Texto: Nada está excluído», afirmou Montoro Filho.
+Token: excluído (Posição: 3)
+Gold: excluir | Predito: excluído
+
+Sentença ID: CF777-1
+Texto: E tudo, segundo a Jovem Pan, para fazer «proselitismo», para «as promessas de sempre».
+Token: Jovem (Posição: 6)
+Gold: Jovem | Predito: jovem
+
+Sentença ID: CF777-5
+Texto: Uma defesa bem parecida com aquela de Lula, no começo das denúncias contra José Paulo Bisol.
+Token: parecida (Posição: 4)
+Gold: parecido | Predito: parecer
+
+Sentença ID: CF778-1
+Texto: «Não tínhamos uma segurança exemplar, mas ela era suficiente para permitir o alvará de licença dos bombeiros», afirmou.
+Token: ela (Posição: 9)
+Gold: ela | Predito: ele
+
+Sentença ID: CF779-5
+Texto: Antes, informou sobre a proibição da Justiça num comunicado de 15 segundos.
+Token: Justiça (Posição: 9)
+Gold: justiça | Predito: Justiça
+
+Sentença ID: CF781-1
+Texto: 'Astronautas' fazem autópsia nos EUA
+Token: ' (Posição: 1)
+Gold: ' | Predito: 'Astronauta
+
+Sentença ID: CF781-1
+Texto: 'Astronautas' fazem autópsia nos EUA
+Token: Astronautas (Posição: 2)
+Gold: astronauta | Predito: '
+
+Sentença ID: CF781-1
+Texto: 'Astronautas' fazem autópsia nos EUA
+Token: ' (Posição: 3)
+Gold: ' | Predito: fazer
+
+Sentença ID: CF781-1
+Texto: 'Astronautas' fazem autópsia nos EUA
+Token: fazem (Posição: 4)
+Gold: fazer | Predito: autópsia
+
+Sentença ID: CF781-1
+Texto: 'Astronautas' fazem autópsia nos EUA
+Token: autópsia (Posição: 5)
+Gold: autópsia | Predito: em
+
+Sentença ID: CF781-1
+Texto: 'Astronautas' fazem autópsia nos EUA
+Token: em (Posição: 6)
+Gold: em | Predito: o
+
+Sentença ID: CF781-1
+Texto: 'Astronautas' fazem autópsia nos EUA
+Token: os (Posição: 7)
+Gold: o | Predito: EUA
+
+Sentença ID: CF781-2
+Texto: Patologistas de hospital de Riverside (Califórnia) tiveram que vestir roupas especiais para autopsiar corpo de uma mulher que teria químicos tóxicos no sangue, porque o cheiro os fez desmaiar.
+Token: Patologistas (Posição: 1)
+Gold: patologista | Predito: Patologista
+
+Sentença ID: CF781-2
+Texto: Patologistas de hospital de Riverside (Califórnia) tiveram que vestir roupas especiais para autopsiar corpo de uma mulher que teria químicos tóxicos no sangue, porque o cheiro os fez desmaiar.
+Token: químicos (Posição: 22)
+Gold: químico | Predito: químicos
+
+
+==================================================
+
+Erros de Dependências (2759 erros):
+Sentença ID: CF756-3
+Texto: Seleção é isso, joga quem está melhor, não tem esse negócio de nome.
+Token: negócio (Posição: 13)
+Gold: (11, 'nsubj') | Predito: (11, 'obj')
+
+Sentença ID: CF756-4
+Texto: A melhor equipe é que deve jogar.
+Token: equipe (Posição: 3)
+Gold: (6, 'nsubj') | Predito: (7, 'nsubj')
+
+Sentença ID: CF757-7
+Texto: Os policiais federais de Mato Grosso do Sul entraram em greve ontem, em adesão ao movimento iniciado no Distrito Federal.
+Token: . (Posição: 25)
+Gold: (10, 'punct') | Predito: (20, 'punct')
+
+Sentença ID: CF758-4
+Texto: «Eu torci muito por você, viu?», disse Itamar a Fu.
+Token: viu (Posição: 8)
+Gold: (3, 'discourse') | Predito: (3, 'parataxis')
+
+Sentença ID: CF759-1
+Texto: Cada usuário pode importar programas até o valor de US$ 200 mil.
+Token: usuário (Posição: 2)
+Gold: (3, 'nsubj') | Predito: (4, 'nsubj')
+
+Sentença ID: CF759-5
+Texto: Se não quiser se aventurar pela importação direta, existem empresas, como a Brasoftware (tel. 011/253-1588) que importam programas sob encomenda.
+Token: encomenda (Posição: 25)
+Gold: (23, 'nmod') | Predito: (22, 'obl')
+
+Sentença ID: CF759-8
+Texto: A taxa de serviço da Brasoftware é coberta pelo desconto que obtém junto ao fornecedor.
+Token: Brasoftware (Posição: 7)
+Gold: (2, 'nmod') | Predito: (4, 'nmod')
+
+Sentença ID: CF764-6
+Texto: O bárbaro linchamento de três pessoas ocorrido esta semana no Paraná pode ter sido particularmente chocante e sem dúvida o foi, filmado e transmitido pela televisão em toda a sua brutalidade, mas constitui apenas mais um na lista dos crimes desse tipo registrados no país.
+Token: linchamento (Posição: 3)
+Gold: (13, 'nsubj') | Predito: (17, 'nsubj')
+
+Sentença ID: CF764-6
+Texto: O bárbaro linchamento de três pessoas ocorrido esta semana no Paraná pode ter sido particularmente chocante e sem dúvida o foi, filmado e transmitido pela televisão em toda a sua brutalidade, mas constitui apenas mais um na lista dos crimes desse tipo registrados no país.
+Token: filmado (Posição: 24)
+Gold: (22, 'advcl') | Predito: (17, 'conj')
+
+Sentença ID: CF764-6
+Texto: O bárbaro linchamento de três pessoas ocorrido esta semana no Paraná pode ter sido particularmente chocante e sem dúvida o foi, filmado e transmitido pela televisão em toda a sua brutalidade, mas constitui apenas mais um na lista dos crimes desse tipo registrados no país.
+Token: transmitido (Posição: 26)
+Gold: (24, 'conj') | Predito: (17, 'conj')
+
+Sentença ID: CF764-6
+Texto: O bárbaro linchamento de três pessoas ocorrido esta semana no Paraná pode ter sido particularmente chocante e sem dúvida o foi, filmado e transmitido pela televisão em toda a sua brutalidade, mas constitui apenas mais um na lista dos crimes desse tipo registrados no país.
+Token: constitui (Posição: 37)
+Gold: (17, 'conj') | Predito: (13, 'conj')
+
+Sentença ID: CF764-6
+Texto: O bárbaro linchamento de três pessoas ocorrido esta semana no Paraná pode ter sido particularmente chocante e sem dúvida o foi, filmado e transmitido pela televisão em toda a sua brutalidade, mas constitui apenas mais um na lista dos crimes desse tipo registrados no país.
+Token: apenas (Posição: 38)
+Gold: (43, 'advmod') | Predito: (40, 'advmod')
+
+Sentença ID: CF764-6
+Texto: O bárbaro linchamento de três pessoas ocorrido esta semana no Paraná pode ter sido particularmente chocante e sem dúvida o foi, filmado e transmitido pela televisão em toda a sua brutalidade, mas constitui apenas mais um na lista dos crimes desse tipo registrados no país.
+Token: lista (Posição: 43)
+Gold: (37, 'obl') | Predito: (40, 'nmod')
+
+Sentença ID: CF765-2
+Texto: O objetivo çe melhorar a rentabilidade do setor.
+Token: çe (Posição: 3)
+Gold: (4, 'cop') | Predito: (4, 'aux')
+
+Sentença ID: CF765-3
+Texto: Segundo o ministro das Minas e Energia, Alexis Stepanenko, essa melhoria deverá ser buscada através da redução de custos e aumento de eficiência.
+Token: e (Posição: 7)
+Gold: (6, 'flat:name') | Predito: (8, 'cc')
+
+Sentença ID: CF765-3
+Texto: Segundo o ministro das Minas e Energia, Alexis Stepanenko, essa melhoria deverá ser buscada através da redução de custos e aumento de eficiência.
+Token: Energia (Posição: 8)
+Gold: (6, 'flat:name') | Predito: (6, 'conj')
+
+Sentença ID: CF765-3
+Texto: Segundo o ministro das Minas e Energia, Alexis Stepanenko, essa melhoria deverá ser buscada através da redução de custos e aumento de eficiência.
+Token: , (Posição: 9)
+Gold: (10, 'punct') | Predito: (3, 'punct')
+
+Sentença ID: CF765-3
+Texto: Segundo o ministro das Minas e Energia, Alexis Stepanenko, essa melhoria deverá ser buscada através da redução de custos e aumento de eficiência.
+Token: Alexis (Posição: 10)
+Gold: (6, 'appos') | Predito: (3, 'appos')
+
+Sentença ID: CF765-3
+Texto: Segundo o ministro das Minas e Energia, Alexis Stepanenko, essa melhoria deverá ser buscada através da redução de custos e aumento de eficiência.
+Token: melhoria (Posição: 14)
+Gold: (15, 'nsubj:pass') | Predito: (17, 'nsubj:pass')
+
+Sentença ID: CF766-4
+Texto: Os EUA, depois de um histórico discurso de seu presidente, Franklin Delano Roosevelt, entraram em guerra contra o Japão e seus aliados no Eixo, Alemanha e Itália.
+Token: , (Posição: 16)
+Gold: (17, 'punct') | Predito: (13, 'punct')
+
+Sentença ID: CF766-4
+Texto: Os EUA, depois de um histórico discurso de seu presidente, Franklin Delano Roosevelt, entraram em guerra contra o Japão e seus aliados no Eixo, Alemanha e Itália.
+Token: Alemanha (Posição: 30)
+Gold: (28, 'appos') | Predito: (28, 'conj')
+
+Sentença ID: CF766-4
+Texto: Os EUA, depois de um histórico discurso de seu presidente, Franklin Delano Roosevelt, entraram em guerra contra o Japão e seus aliados no Eixo, Alemanha e Itália.
+Token: Itália (Posição: 32)
+Gold: (30, 'conj') | Predito: (28, 'conj')
+
+Sentença ID: CF766-9
+Texto: Vargas, na verdade, preferia ficar de fora, ou aliar-se com os vencedores.
+Token: vencedores (Posição: 17)
+Gold: (13, 'obl') | Predito: (13, 'obj')
+
+Sentença ID: CF766-10
+Texto: A Argentina, por exemplo, era bem mais pró-nazi do que o Brasil.
+Token: Brasil (Posição: 15)
+Gold: (10, 'advcl') | Predito: (10, 'obl')
+
+Sentença ID: CF767-3
+Texto: Mas são necessárias estratégias da base da sociedade.
+Token: sociedade (Posição: 10)
+Gold: (4, 'nmod') | Predito: (7, 'nmod')
+
+Sentença ID: CF768-1
+Texto: A substância também é usada em vários medicamentos vendidos no Brasil, que dizem ser capazes de aliviar dores causadas por varizes e eliminar câimbras noturnas em pessoas que sofrem problemas de circulação nas pernas.
+Token: circulação (Posição: 34)
+Gold: (37, 'nmod') | Predito: (32, 'nmod')
+
+Sentença ID: CF768-2
+Texto: Levantamento realizado entre pacientes que ingeriram cápsulas com a substância entre 1969 e 1992 indicou que 16 pessoas podem ter morrido em consequência de contra-indicações causadas pelo sulfato de quinino.
+Token: pessoas (Posição: 18)
+Gold: (19, 'nsubj') | Predito: (21, 'nsubj')
+
+Sentença ID: CF769-2
+Texto: Conforme acordo autorizado pelo BC, o saldo da dívida do Estado com a «Nossa Caixa» de US$ 1 bilhão terá que ser pago este ano, em doze parcelas mensais, atualizadas e com encargos.
+Token: , (Posição: 32)
+Gold: (35, 'punct') | Predito: (29, 'punct')
+
+Sentença ID: CF769-2
+Texto: Conforme acordo autorizado pelo BC, o saldo da dívida do Estado com a «Nossa Caixa» de US$ 1 bilhão terá que ser pago este ano, em doze parcelas mensais, atualizadas e com encargos.
+Token: , (Posição: 37)
+Gold: (38, 'punct') | Predito: (29, 'punct')
+
+Sentença ID: CF772-5
+Texto: «Já estamos contentes por ter chegado às oitavas-de-final», disse Phillip Trent, 24, que assistiu o jogo ao lado do amigo Brian Fagerburg, 24.
+Token: contentes (Posição: 4)
+Gold: (13, 'ccomp') | Predito: (13, 'parataxis')
+
+Sentença ID: CF772-5
+Texto: «Já estamos contentes por ter chegado às oitavas-de-final», disse Phillip Trent, 24, que assistiu o jogo ao lado do amigo Brian Fagerburg, 24.
+Token: , (Posição: 12)
+Gold: (13, 'punct') | Predito: (7, 'punct')
+
+Sentença ID: CF773-3
+Texto: O desembargador Doreste Batista, convidado pelo governador do Rio, Nilo Batista, para ser o supersecretário de Segurança do Estado, disse ontem que, se confirmado, vai pedir apoio do Exército para subir morros e colocar policiamento ostensivo nas ruas.
+Token: , (Posição: 30)
+Gold: (32, 'punct') | Predito: (27, 'punct')
+
+Sentença ID: CF773-4
+Texto: Até o meio-dia de ontem, o desembargador estava tentando um contato com o governador para definir se aceitava ou não o cargo.
+Token: ou (Posição: 20)
+Gold: (19, 'obl') | Predito: (23, 'cc')
+
+Sentença ID: CF773-4
+Texto: Até o meio-dia de ontem, o desembargador estava tentando um contato com o governador para definir se aceitava ou não o cargo.
+Token: não (Posição: 21)
+Gold: (20, 'fixed') | Predito: (23, 'advmod')
+
+Sentença ID: CF773-4
+Texto: Até o meio-dia de ontem, o desembargador estava tentando um contato com o governador para definir se aceitava ou não o cargo.
+Token: cargo (Posição: 23)
+Gold: (19, 'obj') | Predito: (19, 'conj')
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: Ao (Posição: 1)
+Gold: (2, 'case') | Predito: (3, 'case')
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: lado (Posição: 2)
+Gold: (14, 'nmod') | Predito: (3, 'det')
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: de (Posição: 3)
+Gold: (5, 'case') | Predito: (15, 'nmod')
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: o (Posição: 4)
+Gold: (5, 'det') | Predito: (6, 'case')
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: ala (Posição: 5)
+Gold: (2, 'nmod') | Predito: (6, 'det')
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: Charles (Posição: 6)
+Gold: (5, 'appos') | Predito: (3, 'nmod')
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: Barkley (Posição: 7)
+Gold: (6, 'flat:name') | Predito: (6, 'appos')
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: , (Posição: 8)
+Gold: (2, 'punct') | Predito: (7, 'flat:name')
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: « (Posição: 9)
+Gold: (10, 'punct') | Predito: (11, 'punct')
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: Shaq (Posição: 10)
+Gold: (14, 'nsubj') | Predito: (11, 'punct')
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: » (Posição: 11)
+Gold: (10, 'punct') | Predito: (6, 'appos')
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: é (Posição: 12)
+Gold: (14, 'cop') | Predito: (11, 'punct')
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: hoje (Posição: 13)
+Gold: (14, 'advmod') | Predito: (15, 'cop')
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: um (Posição: 14)
+Gold: (0, 'root') | Predito: (15, 'advmod')
+
+Sentença ID: CF774-1
+Texto: Ao lado do ala Charles Barkley, «Shaq» é hoje um dos maiores astros do basquete mundial.
+Token: de (Posição: 15)
+Gold: (18, 'case') | Predito: (0, 'root')
+
+
+==================================================
+
