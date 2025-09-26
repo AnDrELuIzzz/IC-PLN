@@ -5,7 +5,7 @@ nltk>=3.6.0
 transformers>=4.0.0
 torch>=1.9.0
 tabulate>=0.8.9
-
+ufal.udpipe
 # Para Flair (se usar)
 flair>=0.11.0
 
@@ -13,7 +13,6 @@ flair>=0.11.0
 numpy>=1.21.0
 
 # Modelo spaCy em português
-# spacy-model-pt-core-news-lg>=3.0.0
-
+spacy-model-pt-core-news-lg>=3.0.0
 # Outras dependências opcionais
 nltk>=3.6.0  
